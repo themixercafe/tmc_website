@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-sm text-primary-foreground/40">
-          <p>&copy; {new Date().getFullYear()} The Mixer Cafe. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Mixer Cafe. All rights reserved..</p>
         </div>
       </div>
     </footer>
