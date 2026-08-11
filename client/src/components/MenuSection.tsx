@@ -6,7 +6,7 @@ import { AlertCircle } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import menuData from "../data/menu.json";
 import coxinhaImage from "@assets/coxinha_1786458102598.jpg";
-import queijoQuenteImage from "@assets/queijo_quente_1786458834535.jpg";
+import queijoQuenteImage from "@assets/queijo_quente_clean.jpg";
 
 // Type definition for Menu Item
 type MenuItem = {
