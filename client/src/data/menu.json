@@ -1,6 +1,6 @@
 {
   "brazilian": [
-    { "name": "Queijo Quente - Combo", "description": "Bread and melted cheese.", "price": "$11.50", "popular": false },
+    { "name": "Queijo Quente - Combo", "description": "Melted Cheese, French roll, corn meal cake and black cofffe.", "price": "$11.50", "popular": false },
     { "name": "Misto Quente", "description": "Bread, melted cheese, tomato, ham.", "price": "$7.50", "popular": true },
     { "name": "Coxinha", "description": "Traditional chicken croquette.", "price": "$4.00", "popular": true, "checkAvailability": true },
     { "name": "Pão de Queijo", "description": "Traditional cheese bread.", "price": "$1.95", "popular": true },
