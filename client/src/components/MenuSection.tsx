@@ -150,7 +150,7 @@ export default function MenuSection() {
                 value="desserts" 
                 className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
               >
-                Desserts
+                Pastries & Savories
               </TabsTrigger>
               <TabsTrigger 
                 value="beverages" 
