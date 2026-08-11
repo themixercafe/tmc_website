@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { AlertCircle } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import menuData from "../data/menu.json";
+import coxinhaImage from "@assets/coxinha_1786458102598.jpg";
 
 // Type definition for Menu Item
 type MenuItem = {
@@ -28,41 +29,56 @@ type MenuData = {
 
 const menuItems: MenuData = menuData as unknown as MenuData;
 
-const MenuItem = ({ item }: { item: MenuItem }) => (
-  <Card className="border-none shadow-none bg-white/50 hover:bg-white transition-colors duration-300 group h-full">
-    <CardHeader className="flex flex-row items-baseline justify-between p-4 pb-2">
-      <div className="flex items-center gap-2 flex-wrap">
-        <CardTitle className="text-lg font-serif text-primary group-hover:text-accent transition-colors">
-          {item.name}
-        </CardTitle>
-        {item.popular && (
-          <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary/20 text-secondary-foreground hover:bg-secondary/30">
-            Favorite
-          </Badge>
+const MenuItem = ({ item }: { item: MenuItem }) => {
+  const image = item.name === "Coxinha" ? coxinhaImage : undefined;
+
+  return (
+    <Card className="border-none shadow-none bg-white/50 hover:bg-white transition-colors duration-300 group h-full">
+      <div className="flex gap-4 p-4">
+        {image && (
+          <img
+            src={image}
+            alt={item.name}
+            className="w-24 h-24 rounded-lg object-cover shrink-0"
+          />
         )}
-        {item.checkAvailability && (
-          <Popover>
-            <PopoverTrigger asChild>
-              <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-orange-600 bg-orange-50 hover:bg-orange-100 cursor-help flex items-center gap-1">
-                <AlertCircle className="w-3 h-3" />
-                Check Availability
-              </Badge>
-            </PopoverTrigger>
-            <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
-              <p>Please contact the store for availability.</p>
-            </PopoverContent>
-          </Popover>
-        )}
+        <div className="flex-1 min-w-0">
+          <CardHeader className="flex flex-row items-baseline justify-between p-0 pb-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <CardTitle className="text-lg font-serif text-primary group-hover:text-accent transition-colors">
+                {item.name}
+              </CardTitle>
+              {item.popular && (
+                <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary/20 text-secondary-foreground hover:bg-secondary/30">
+                  Favorite
+                </Badge>
+              )}
+              {item.checkAvailability && (
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-orange-600 bg-orange-50 hover:bg-orange-100 cursor-help flex items-center gap-1">
+                      <AlertCircle className="w-3 h-3" />
+                      Check Availability
+                    </Badge>
+                  </PopoverTrigger>
+                  <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
+                    <p>Please contact the store for availability.</p>
+                  </PopoverContent>
+                </Popover>
+              )}
+            </div>
+            <span className="font-bold text-accent whitespace-nowrap ml-2">{item.price}</span>
+          </CardHeader>
+          <CardContent className="p-0">
+            <CardDescription className="text-muted-foreground leading-relaxed">
+              {item.description}
+            </CardDescription>
+          </CardContent>
+        </div>
       </div>
-      <span className="font-bold text-accent whitespace-nowrap ml-2">{item.price}</span>
-    </CardHeader>
-    <CardContent className="p-4 pt-0">
-      <CardDescription className="text-muted-foreground leading-relaxed">
-        {item.description}
-      </CardDescription>
-    </CardContent>
-  </Card>
-);
+    </Card>
+  );
+};
 
 export default function MenuSection() {
   const [activeTab, setActiveTab] = useState("brazilian");
