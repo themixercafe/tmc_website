@@ -42,7 +42,7 @@ export default function Hero() {
             <Button 
               variant="outline" 
               size="lg" 
-              className="h-12 px-8 rounded-full text-lg border-white text-white hover:bg-white/20 hover:text-white transition-all backdrop-blur-sm bg-transparent"
+              className="h-12 px-8 rounded-full text-lg border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all backdrop-blur-sm bg-transparent"
               onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Menu
