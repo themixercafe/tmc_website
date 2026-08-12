@@ -5,7 +5,7 @@
     { "name": "Coxinha", "description": "Coxina is a brazilian snack of paulista origian witch consists of chopped or shredded chicken meat, covered in dough, cream cheese molded into a shape resembling a teardrop, battered and fried.", "price": "$4.15", "popular": true, "checkAvailability": true },
     { "name": "Pão de Queijo", "description": "Pão de queijo is a small, baked Brazilian cheese bread with a chewy, elastic interior and a slightly crisp exterior, made primarily from tapioca (cassava) flour and cheese.", "price": "$1.55", "popular": true },
     { "name": "Espirra", "description": "Baked dough filled with seasoned meat.", "price": "$4.00", "popular": false, "checkAvailability": true },
-    { "name": "Empanada", "description": "Baked pastry turnover filled with savory ingredients.", "price": "$4.00", "popular": false }
+    { "name": "Empanada", "description": "Chicken or Beef.", "price": "$4.00", "popular": false }
   ],
   "turkish": [
     { "name": "Turkish Bagel", "description": "Cheese, tomatoes and green peppers.", "price": "$8.50", "popular": false },
