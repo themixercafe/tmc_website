@@ -154,7 +154,7 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
           <img src={image} alt={item.name} className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl object-contain" />
         </div>
       )}
-      <div className={`border-b border-white/10 py-4 last:border-0 grid gap-4 items-center ${image ? "grid-cols-3 sm:grid-cols-4" : "grid-cols-1"}`}>
+      <div className={`border-b border-white/10 py-4 last:border-0 grid gap-4 items-start ${image ? "grid-cols-3 sm:grid-cols-4" : "grid-cols-1"}`}>
         {/* Text */}
         <div className={image ? "col-span-2 sm:col-span-3" : "col-span-1"}>
           <div className="flex justify-between items-baseline gap-4">
