@@ -29,7 +29,7 @@ export default function AboutSection() {
               <span className="text-secondary">Three Cultures,</span> <br />
               One Heart.
             </h2>
-            <div className="space-y-6 text-white/80 text-lg leading-relaxed">
+            <div className="space-y-6 text-white/70 text-sm leading-relaxed">
               <p>
                 The Mixer Cafe was born from a simple idea: that the best way to share love is through food. 
                 Founded by Regina and Ayşe, two mothers who found themselves neighbors in Boynton Beach, 
@@ -50,11 +50,11 @@ export default function AboutSection() {
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-serif text-xl font-bold text-white mb-1">Boynton Beach</h4>
-                  <p className="text-sm text-white/60">Our Home & Community</p>
+                  <p className="text-sm text-white/70">Our Home & Community</p>
                 </div>
                 <div>
                   <h4 className="font-serif text-xl font-bold text-white mb-1">Est. 2025</h4>
-                  <p className="text-sm text-white/60">Serving with Love</p>
+                  <p className="text-sm text-white/70">Serving with Love</p>
                 </div>
               </div>
             </div>
