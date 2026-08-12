@@ -13,7 +13,8 @@
     { "name": "Turkish Platter", "description": "Two eggs, tomato salad with olives, honey, butter, cheese, Turkish bagel, Nutella and jelly.", "price": "$15.90", "popular": true },
     { "name": "Spinach Feta Börek", "description": "Savory pastry with spinach and feta cheese.", "price": "$4.00", "popular": true, "checkAvailability": true },
     { "name": "Potato Beef Börek", "description": "Savory pastry with potato and beef.", "price": "$4.45", "popular": false },
-    { "name": "Feta Cheese & Parsley Börek", "description": "Savory pastry with feta cheese and parsley.", "price": "$4.00", "popular": false, "checkAvailability": true }
+    { "name": "Feta Cheese & Parsley Börek", "description": "Savory pastry with feta cheese and parsley.", "price": "$4.00", "popular": false, "checkAvailability": true },
+    { "name": "Turkish Sausage", "description": "Sucuk (Turkish sausage) with egg, cooked in a skillet.", "price": "", "popular": false, "checkAvailability": true }
   ],
   "french": [
     { "name": "Bacon, Egg & Cheese", "description": "Croissant, bacon, egg and cheese.", "price": "$12.30", "popular": true },

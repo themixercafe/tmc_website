@@ -14,6 +14,9 @@ import espirraImage from "@assets/pexels-andre-tomaz-101600289-15899519_17865432
 import menemenImage from "@assets/menemen_clean.jpg";
 import baconEggCheeseImage from "@assets/Bacon,_Egg_&_Cheese_1786545320586.jpg";
 import turkishTeaImage from "@assets/Turkish_Tea_1786545372363.jpg";
+import dearBenedictImage from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
+import turkishSausageImage from "@assets/Turkish_Sausage_1786545424470.jpg";
+import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
 type MenuItem = {
@@ -47,6 +50,9 @@ const imageMap: Record<string, string> = {
   "Menemen": menemenImage,
   "Bacon, Egg & Cheese": baconEggCheeseImage,
   "Turkish Tea": turkishTeaImage,
+  "Dear Benedict*": dearBenedictImage,
+  "Turkish Sausage": turkishSausageImage,
+  "Turkey": turkeySandImage,
 };
 
 const MenuItem = ({ item }: { item: MenuItem }) => {
