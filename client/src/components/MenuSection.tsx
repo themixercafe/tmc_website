@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -33,31 +33,58 @@ type MenuData = {
 
 const menuItems: MenuData = menuData as unknown as MenuData;
 
+const imageMap: Record<string, string> = {
+  "Coxinha": coxinhaImage,
+  "Queijo Quente - Combo": queijoQuenteImage,
+  "Misto Quente": mistoQuenteImage,
+  "Pão de Queijo": paodeQueijoImage,
+  "Empanada": empanadaImage,
+};
+
 const MenuItem = ({ item }: { item: MenuItem }) => {
-  const image =
-    item.name === "Coxinha"
-      ? coxinhaImage
-      : item.name === "Queijo Quente - Combo"
-        ? queijoQuenteImage
-        : item.name === "Misto Quente"
-          ? mistoQuenteImage
-          : item.name === "Pão de Queijo"
-            ? paodeQueijoImage
-            : item.name === "Empanada"
-            ? empanadaImage
-            : undefined;
+  const image = imageMap[item.name];
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const close = (e: KeyboardEvent) => e.key === "Escape" && setLightboxOpen(false);
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [lightboxOpen]);
 
   return (
-    <Card className="border-none shadow-none bg-white/50 hover:bg-white transition-colors duration-300 group h-full">
-      <div className="flex gap-4 p-4">
-        {image && (
+    <>
+      {/* Lightbox overlay */}
+      {lightboxOpen && image && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 cursor-zoom-out"
+          onClick={() => setLightboxOpen(false)}
+        >
           <img
             src={image}
             alt={item.name}
-            className="w-24 h-24 rounded-lg object-cover shrink-0"
+            className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl object-contain"
           />
+        </div>
+      )}
+
+      <Card className="border-none shadow-sm bg-white/50 hover:bg-white transition-colors duration-300 group h-full overflow-hidden">
+        {/* Photo on top */}
+        {image && (
+          <div
+            className="w-full h-48 overflow-hidden cursor-zoom-in"
+            onClick={() => setLightboxOpen(true)}
+          >
+            <img
+              src={image}
+              alt={item.name}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
         )}
-        <div className="flex-1 min-w-0">
+
+        {/* Text below */}
+        <div className="p-4">
           <CardHeader className="flex flex-row items-baseline justify-between p-0 pb-2">
             <div className="flex items-center gap-2 flex-wrap">
               <CardTitle className="text-lg font-serif text-primary group-hover:text-accent transition-colors">
@@ -90,8 +117,8 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
             </CardDescription>
           </CardContent>
         </div>
-      </div>
-    </Card>
+      </Card>
+    </>
   );
 };
 
