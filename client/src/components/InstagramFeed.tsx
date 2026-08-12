@@ -27,7 +27,7 @@ const instagramPosts = [
 
 export default function InstagramFeed() {
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden">
        {/* Background accent */}
        <div className="absolute inset-0 bg-secondary/5 -skew-y-3 transform origin-top-left scale-110 z-0" />
 
@@ -41,10 +41,10 @@ export default function InstagramFeed() {
              </div>
              <span className="font-serif text-xl font-bold text-primary">@themixercafe</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
             Follow Our Journey
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-white/60 max-w-2xl mx-auto mb-8">
             A glimpse into our daily creations, fresh bakes, and cafe vibes. Tag us to be featured!
           </p>
           

@@ -101,7 +101,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         <div className="p-4">
           <CardHeader className="flex flex-row items-baseline justify-between p-0 pb-2">
             <div className="flex items-center gap-2 flex-wrap">
-              <CardTitle className="text-lg font-serif font-bold text-primary group-hover:text-accent transition-colors">
+              <CardTitle className="text-lg font-serif font-bold text-secondary group-hover:text-secondary/80 transition-colors">
                 {item.name}
               </CardTitle>
               {item.popular && (

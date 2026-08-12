@@ -20,7 +20,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm py-2"
+          ? "bg-black/95 backdrop-blur-md shadow-sm py-2"
           : "bg-transparent py-6"
       }`}
     >
@@ -105,24 +105,24 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border p-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-5">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-black border-b border-white/10 p-4 flex flex-col gap-4 shadow-xl animate-in slide-in-from-top-5">
           <a 
             href="#menu"
-            className="text-lg font-medium text-foreground py-2"
+            className="text-lg font-medium text-white/80 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Menu
           </a>
           <a 
             href="#about"
-            className="text-lg font-medium text-foreground py-2"
+            className="text-lg font-medium text-white/80 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Our Story
           </a>
           <a 
             href="#contact"
-            className="text-lg font-medium text-foreground py-2"
+            className="text-lg font-medium text-white/80 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Visit Us
