@@ -336,7 +336,7 @@ export default function MenuSection() {
         </Tabs>
 
         <div className="text-center mt-12 max-w-3xl mx-auto">
-          <p className="text-[10px] text-white/40 uppercase leading-relaxed">
+          <p className="text-base text-red-500 uppercase leading-relaxed font-bold">
             *CONSUMING RAW OR UNDERCOOKED MEATS, POULTRY, SEAFOOD, SHELLFISH, OR EGGS MAY INCREASE YOUR RISK OF FOODBORNE ILLNESS, ESPECIALLY IF YOU HAVE CERTAIN MEDICAL CONDITIONS.
           </p>
         </div>
