@@ -126,7 +126,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
             <span className="font-bold text-accent whitespace-nowrap ml-2">{item.price}</span>
           </CardHeader>
           <CardContent className="p-0">
-            <CardDescription className="text-white/80 leading-relaxed">
+            <CardDescription className="text-white/80 leading-relaxed font-bold">
               {item.description}
             </CardDescription>
           </CardContent>
@@ -247,7 +247,7 @@ export default function MenuSection() {
         <div className="text-center mb-16">
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Explore Our Menu</h2>
-          <p className="text-white/60 max-w-2xl mx-auto">
+          <p className="text-white/60 max-w-2xl mx-auto font-bold">
             A carefully curated selection of our favorite recipes passed down through generations.
           </p>
         </div>

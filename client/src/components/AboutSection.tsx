@@ -50,11 +50,11 @@ export default function AboutSection() {
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-serif text-xl font-bold text-white mb-1">Boynton Beach</h4>
-                  <p className="text-sm text-white/70">Our Home & Community</p>
+                  <p className="text-sm text-white/70 font-bold">Our Home & Community</p>
                 </div>
                 <div>
                   <h4 className="font-serif text-xl font-bold text-white mb-1">Est. 2025</h4>
-                  <p className="text-sm text-white/70">Serving with Love</p>
+                  <p className="text-sm text-white/70 font-bold">Serving with Love</p>
                 </div>
               </div>
             </div>
