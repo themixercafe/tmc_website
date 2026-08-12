@@ -12,6 +12,7 @@ import paodeQueijoImage from "@assets/craveiro6-bread-4968502_1920_1786541762162
 import empanadaImage from "@assets/IMG-20260520-WA0007_1786542338164.jpg";
 import espirraImage from "@assets/pexels-andre-tomaz-101600289-15899519_1786543240514.jpg";
 import menemenImage from "@assets/menemen_clean.jpg";
+import baconEggCheeseImage from "@assets/Bacon,_Egg_&_Cheese_1786545320586.jpg";
 
 // Type definition for Menu Item
 type MenuItem = {
@@ -43,6 +44,7 @@ const imageMap: Record<string, string> = {
   "Empanada": empanadaImage,
   "Espirra": espirraImage,
   "Menemen": menemenImage,
+  "Bacon, Egg & Cheese": baconEggCheeseImage,
 };
 
 const MenuItem = ({ item }: { item: MenuItem }) => {
