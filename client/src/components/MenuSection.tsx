@@ -181,7 +181,7 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
             </div>
             <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>
           </div>
-          <p className="text-white/70 mt-1 text-sm leading-relaxed">{item.description}</p>
+          <p className="text-white/80 mt-1 text-lg leading-relaxed">{item.description}</p>
         </div>
         {/* Photo aligned to this item */}
         {image && (
