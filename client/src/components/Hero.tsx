@@ -40,9 +40,8 @@ export default function Hero() {
               </Button>
             </OrderOnlineDialog>
             <Button 
-              variant="outline" 
               size="lg" 
-              className="h-12 px-8 rounded-full text-lg border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all backdrop-blur-sm bg-transparent"
+              className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-8 h-12 rounded-full text-lg shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transition-all transform hover:-translate-y-1"
               onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Menu
