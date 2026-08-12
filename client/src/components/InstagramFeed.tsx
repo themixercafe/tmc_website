@@ -18,7 +18,7 @@ import imgTurkey from "@assets/Turkey_sand_3_1786545548991.png";
 
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
-  { id: 2, image: imgMenemen, caption: "Turkish scrambled eggs done right 🍳🇹🇷 #menemen #turkishbreakfast #themixercafe" },
+  { id: 2, image: imgMenemen, caption: "Turkish scrambled eggs done right 🍳🇹🇷 #menemen #turkishbreakfast #themixercafe", objectPosition: "bottom" },
   { id: 3, image: imgWaffles, caption: "Triple waffle loaded with strawberries, banana & Nutella 🧇🍓 #waffles #brunch #themixercafe" },
   { id: 4, image: imgBenedict, caption: "Dear Benedict — poached eggs, Hollandaise & Canadian bacon on a croissant 🥚🥐 #brunch #themixercafe" },
   { id: 5, image: imgTurkishSausage, caption: "Sucuk & egg fresh from the skillet 🇹🇷🍳 #turkishsausage #sucuk #themixercafe" },
@@ -72,6 +72,7 @@ export default function InstagramFeed() {
                     src={post.image}
                     alt={post.caption}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    style={post.objectPosition ? { objectPosition: post.objectPosition } : undefined}
                   />
                   
                   {/* Overlay on Hover */}
