@@ -29,7 +29,7 @@ export default function AboutSection() {
               <span className="text-secondary">Three Cultures,</span> <br />
               One Heart.
             </h2>
-            <div className="space-y-6 text-white/80 text-lg leading-relaxed">
+            <div className="space-y-6 text-white/80 text-lg leading-relaxed font-bold">
               <p>
                 The Mixer Cafe was born from a simple idea: that the best way to share love is through food. 
                 Founded by Regina and Ayşe, two mothers who found themselves neighbors in Boynton Beach, 
