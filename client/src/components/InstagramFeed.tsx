@@ -12,13 +12,10 @@ import {
 import imgBaklava from "@assets/Baklava_UberEats_2880x2304_1786544856975.jpg";
 import imgMenemen from "@assets/menemen_clean.jpg";
 import imgWaffles from "@assets/tRIPLE_wAFFLES_1786544970112.jpg";
-import imgBrunch from "@assets/Blueberries_pancakes,_Dear_Benedict,_Croissant_tartine_1786545051997.png";
-
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
   { id: 2, image: imgMenemen, caption: "Turkish scrambled eggs done right 🍳🇹🇷 #menemen #turkishbreakfast #themixercafe" },
   { id: 3, image: imgWaffles, caption: "Triple waffle loaded with strawberries, banana & Nutella 🧇🍓 #waffles #brunch #themixercafe" },
-  { id: 4, image: imgBrunch, caption: "Blueberry pancakes, Dear Benedict, Croissant Tartine — pick your favorite! 🥞🍳🥐 #brunch #breakfast #themixercafe" },
 ];
 
 export default function InstagramFeed() {
