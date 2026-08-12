@@ -7,6 +7,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import menuData from "../data/menu.json";
 import coxinhaImage from "@assets/coxinha_1786458102598.jpg";
 import queijoQuenteImage from "@assets/queijo_quente_clean.jpg";
+import mistoQuenteImage from "@assets/misto_quente_clean.jpg";
 
 // Type definition for Menu Item
 type MenuItem = {
@@ -36,7 +37,9 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
       ? coxinhaImage
       : item.name === "Queijo Quente - Combo"
         ? queijoQuenteImage
-        : undefined;
+        : item.name === "Misto Quente"
+          ? mistoQuenteImage
+          : undefined;
 
   return (
     <Card className="border-none shadow-none bg-white/50 hover:bg-white transition-colors duration-300 group h-full">
