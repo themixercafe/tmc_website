@@ -5,7 +5,7 @@ import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -13,7 +13,7 @@ export default function Hero() {
           alt="Table spread with Brazilian, Turkish and French food"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
       </div>
 
       {/* Content */}
