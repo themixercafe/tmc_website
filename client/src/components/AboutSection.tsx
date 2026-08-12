@@ -23,7 +23,7 @@ export default function AboutSection() {
 
           {/* Text Side */}
           <div className="order-1 lg:order-2">
-            <span className="text-secondary font-medium tracking-widest uppercase text-sm mb-2 block">Our Story</span>
+            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Our Story</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
               Two Mothers, <br />
               <span className="text-secondary">Three Cultures,</span> <br />

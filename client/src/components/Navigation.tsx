@@ -45,7 +45,7 @@ export default function Navigation() {
           </a>
           <a 
             href="#about"
-            className="transition-colors font-medium text-secondary hover:text-secondary/80"
+            className="transition-colors font-bold text-secondary hover:text-secondary/80"
           >
             Our Story
           </a>
