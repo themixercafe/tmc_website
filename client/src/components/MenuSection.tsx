@@ -245,7 +245,7 @@ export default function MenuSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-secondary font-medium tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Explore Our Menu</h2>
           <p className="text-white/60 max-w-2xl mx-auto">
             A carefully curated selection of our favorite recipes passed down through generations.
