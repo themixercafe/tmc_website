@@ -8,19 +8,17 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// Mock Images
-import img1 from "@assets/stock_images/delicious_brazilian__beaea890.jpg";
-import img2 from "@assets/stock_images/turkish_coffee_with__1db7f1ed.jpg";
-import img3 from "@assets/stock_images/fresh_croissant_and__97d971dc.jpg";
-import img4 from "@assets/stock_images/cafe_latte_art_ec20501c.jpg";
-import img5 from "@assets/stock_images/acai_bowl_with_fruit_6278dc79.jpg";
+// Cafe Photos
+import imgBaklava from "@assets/Baklava_UberEats_2880x2304_1786544856975.jpg";
+import imgMenemen from "@assets/menemen_clean.jpg";
+import imgWaffles from "@assets/tRIPLE_wAFFLES_1786544970112.jpg";
+import imgBrunch from "@assets/Blueberries_pancakes,_Dear_Benedict,_Croissant_tartine_1786545051997.png";
 
 const instagramPosts = [
-  { id: 1, image: img1, caption: "Fresh Pão de Queijo straight from the oven! 🇧🇷 #brazilianfood #paodequeijo" },
-  { id: 2, image: img2, caption: "Afternoon pick-me-up: Turkish Coffee & Baklava. 🇹🇷 #turkishcoffee #coffeetime" },
-  { id: 3, image: img3, caption: "Buttery croissants baked daily. 🥐 #frenchpastry #breakfast" },
-  { id: 4, image: img4, caption: "Latte art love. ❤️ #baristalife #latteart #boyntonbeach" },
-  { id: 5, image: img5, caption: "Start your day fresh with our Acai Bowls! 🫐 #healthybreakfast #acaibowl" },
+  { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
+  { id: 2, image: imgMenemen, caption: "Turkish scrambled eggs done right 🍳🇹🇷 #menemen #turkishbreakfast #themixercafe" },
+  { id: 3, image: imgWaffles, caption: "Triple waffle loaded with strawberries, banana & Nutella 🧇🍓 #waffles #brunch #themixercafe" },
+  { id: 4, image: imgBrunch, caption: "Blueberry pancakes, Dear Benedict, Croissant Tartine — pick your favorite! 🥞🍳🥐 #brunch #breakfast #themixercafe" },
 ];
 
 export default function InstagramFeed() {
