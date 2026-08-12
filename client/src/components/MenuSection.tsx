@@ -82,7 +82,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         </div>
       )}
 
-      <Card className="border-none shadow-sm bg-white/50 hover:bg-white transition-colors duration-300 group h-full overflow-hidden">
+      <Card className="border-none shadow-sm bg-white/10 hover:bg-white/20 transition-colors duration-300 group h-full overflow-hidden">
         {/* Photo on top */}
         {image && (
           <div
@@ -101,7 +101,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         <div className="p-4">
           <CardHeader className="flex flex-row items-baseline justify-between p-0 pb-2">
             <div className="flex items-center gap-2 flex-wrap">
-              <CardTitle className="text-lg font-serif text-primary group-hover:text-accent transition-colors">
+              <CardTitle className="text-lg font-serif font-bold text-primary group-hover:text-accent transition-colors">
                 {item.name}
               </CardTitle>
               {item.popular && (
@@ -126,7 +126,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
             <span className="font-bold text-accent whitespace-nowrap ml-2">{item.price}</span>
           </CardHeader>
           <CardContent className="p-0">
-            <CardDescription className="text-muted-foreground leading-relaxed">
+            <CardDescription className="text-white/80 leading-relaxed">
               {item.description}
             </CardDescription>
           </CardContent>
@@ -157,8 +157,8 @@ export default function MenuSection() {
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
           <div className="flex items-center gap-4 mb-6">
-            <h3 className="text-2xl font-serif font-bold text-primary">{category}</h3>
-            <div className="h-px bg-border flex-1" />
+            <h3 className="text-2xl font-serif font-bold text-white">{category}</h3>
+            <div className="h-px bg-white/20 flex-1" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {items.map((item, idx) => (
@@ -171,16 +171,16 @@ export default function MenuSection() {
   );
 
   return (
-    <section id="menu" className="py-20 bg-background relative overflow-hidden scroll-mt-24">
+    <section id="menu" className="py-20 bg-black relative overflow-hidden scroll-mt-24">
       {/* Decorative background element */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-accent font-medium tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Explore Our Menu</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <span className="text-secondary font-medium tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Explore Our Menu</h2>
+          <p className="text-white/60 max-w-2xl mx-auto">
             A carefully curated selection of our favorite recipes passed down through generations.
           </p>
         </div>
@@ -196,43 +196,43 @@ export default function MenuSection() {
             <TabsList className="bg-transparent h-auto gap-3 flex-wrap justify-center">
               <TabsTrigger 
                 value="brazilian" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 Brazilian
               </TabsTrigger>
               <TabsTrigger 
                 value="turkish" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 Turkish
               </TabsTrigger>
               <TabsTrigger 
                 value="french" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 French
               </TabsTrigger>
               <TabsTrigger 
                 value="american" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 Cafe Classics
               </TabsTrigger>
               <TabsTrigger 
                 value="desserts" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 Pastries & Savories
               </TabsTrigger>
               <TabsTrigger 
                 value="beverages" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 Beverages
               </TabsTrigger>
               <TabsTrigger 
                 value="smoothies" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-transparent data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
               >
                 Smoothies
               </TabsTrigger>
@@ -281,7 +281,7 @@ export default function MenuSection() {
         </Tabs>
 
         <div className="text-center mt-12 max-w-3xl mx-auto">
-          <p className="text-[10px] text-muted-foreground uppercase leading-relaxed">
+          <p className="text-[10px] text-white/40 uppercase leading-relaxed">
             *CONSUMING RAW OR UNDERCOOKED MEATS, POULTRY, SEAFOOD, SHELLFISH, OR EGGS MAY INCREASE YOUR RISK OF FOODBORNE ILLNESS, ESPECIALLY IF YOU HAVE CERTAIN MEDICAL CONDITIONS.
           </p>
         </div>
