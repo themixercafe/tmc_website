@@ -26,10 +26,8 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/">
-          <span className={`font-serif text-2xl md:text-3xl font-bold tracking-tight transition-colors cursor-pointer ${
-            isScrolled ? "text-primary" : "text-white"
-          }`}>
-            The Mixer <span className={isScrolled ? "text-secondary" : "text-secondary"}>Cafe</span>
+          <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight transition-colors cursor-pointer text-secondary">
+            The Mixer Cafe
           </span>
         </Link>
 
@@ -47,11 +45,7 @@ export default function Navigation() {
           </a>
           <a 
             href="#about"
-            className={`transition-colors font-medium ${
-              isScrolled 
-                ? "text-foreground/80 hover:text-primary" 
-                : "text-white/90 hover:text-white"
-            }`}
+            className="transition-colors font-medium text-secondary hover:text-secondary/80"
           >
             Our Story
           </a>
