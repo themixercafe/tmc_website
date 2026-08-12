@@ -76,11 +76,7 @@ export default function Navigation() {
 
           <OrderOnlineDialog>
             <Button 
-              className={`font-semibold px-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 ${
-                isScrolled
-                  ? "bg-primary hover:bg-primary/90 text-primary-foreground"
-                  : "bg-white hover:bg-white/90 text-primary"
-              }`}
+              className="font-semibold px-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 bg-secondary hover:bg-secondary/90 text-secondary-foreground"
             >
               <ShoppingBag className="w-4 h-4 mr-2" />
               Order Online
