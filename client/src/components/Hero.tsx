@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@assets/generated_images/cultural_fusion_cafe_table_spread_with_pastries_and_coffee.png";
+import heroImage from "@assets/20241215_200807_1786554155603.jpg";
 import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
