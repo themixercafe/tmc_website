@@ -8,6 +8,7 @@ import menuData from "../data/menu.json";
 import coxinhaImage from "@assets/coxinha_1786458102598.jpg";
 import queijoQuenteImage from "@assets/queijo_quente_clean.jpg";
 import mistoQuenteImage from "@assets/misto_quente_clean.jpg";
+import paodeQueijoImage from "@assets/craveiro6-bread-4968502_1920_1786541762162.jpg";
 
 // Type definition for Menu Item
 type MenuItem = {
@@ -39,7 +40,9 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         ? queijoQuenteImage
         : item.name === "Misto Quente"
           ? mistoQuenteImage
-          : undefined;
+          : item.name === "Pão de Queijo"
+            ? paodeQueijoImage
+            : undefined;
 
   return (
     <Card className="border-none shadow-none bg-white/50 hover:bg-white transition-colors duration-300 group h-full">
