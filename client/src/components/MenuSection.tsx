@@ -136,62 +136,72 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
   );
 };
 
-const MenuListRow = ({ item }: { item: MenuItem }) => (
-  <div className="border-b border-white/10 py-4 last:border-0">
-    <div className="flex justify-between items-baseline gap-4">
-      <div className="flex items-center gap-2 flex-wrap">
-        <span className="text-secondary font-bold text-lg font-serif">{item.name}</span>
-        {item.popular && (
-          <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary/20 text-secondary-foreground">
-            Favorite
-          </Badge>
-        )}
-        {item.checkAvailability && (
-          <Popover>
-            <PopoverTrigger asChild>
-              <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-orange-400 bg-orange-500/10 hover:bg-orange-500/20 cursor-help flex items-center gap-1">
-                <AlertCircle className="w-3 h-3" />
-                Check Availability
-              </Badge>
-            </PopoverTrigger>
-            <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
-              <p>Please contact the store for availability.</p>
-            </PopoverContent>
-          </Popover>
-        )}
-      </div>
-      <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>
-    </div>
-    <p className="text-white/70 mt-1 text-sm leading-relaxed">{item.description}</p>
-  </div>
-);
+const MenuListRow = ({ item }: { item: MenuItem }) => {
+  const image = imageMap[item.name];
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
-const renderMenuWithPhotos = (items: MenuItem[]) => {
-  const photoItems = items.filter(i => imageMap[i.name]);
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const close = (e: KeyboardEvent) => e.key === "Escape" && setLightboxOpen(false);
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [lightboxOpen]);
+
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <div className="lg:col-span-2">
-        {items.map((item, idx) => <MenuListRow key={idx} item={item} />)}
-      </div>
-      {photoItems.length > 0 && (
-        <div className="lg:col-span-1 space-y-3">
-          {photoItems.map((item, idx) => (
-            <div key={idx} className="relative rounded-xl overflow-hidden">
-              <img
-                src={imageMap[item.name]}
-                alt={item.name}
-                className="w-full h-44 object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-3 py-2">
-                <span className="text-white font-bold text-xs uppercase tracking-wider">{item.name}</span>
-              </div>
-            </div>
-          ))}
+    <>
+      {lightboxOpen && image && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 cursor-zoom-out" onClick={() => setLightboxOpen(false)}>
+          <img src={image} alt={item.name} className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl object-contain" />
         </div>
       )}
-    </div>
+      <div className={`border-b border-white/10 py-4 last:border-0 grid gap-4 items-center ${image ? "grid-cols-3 sm:grid-cols-4" : "grid-cols-1"}`}>
+        {/* Text */}
+        <div className={image ? "col-span-2 sm:col-span-3" : "col-span-1"}>
+          <div className="flex justify-between items-baseline gap-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-secondary font-bold text-lg font-serif">{item.name}</span>
+              {item.popular && (
+                <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary/20 text-secondary-foreground">
+                  Favorite
+                </Badge>
+              )}
+              {item.checkAvailability && (
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-orange-400 bg-orange-500/10 hover:bg-orange-500/20 cursor-help flex items-center gap-1">
+                      <AlertCircle className="w-3 h-3" />
+                      Check Availability
+                    </Badge>
+                  </PopoverTrigger>
+                  <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
+                    <p>Please contact the store for availability.</p>
+                  </PopoverContent>
+                </Popover>
+              )}
+            </div>
+            <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>
+          </div>
+          <p className="text-white/70 mt-1 text-sm leading-relaxed">{item.description}</p>
+        </div>
+        {/* Photo aligned to this item */}
+        {image && (
+          <div className="col-span-1 relative rounded-xl overflow-hidden h-28 cursor-zoom-in" onClick={() => setLightboxOpen(true)}>
+            <img src={image} alt={item.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-2 py-1">
+              <span className="text-white font-bold text-[10px] uppercase tracking-wider">{item.name}</span>
+            </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
+
+const renderMenuWithPhotos = (items: MenuItem[]) => (
+  <div className="space-y-0">
+    {items.map((item, idx) => <MenuListRow key={idx} item={item} />)}
+  </div>
+);
 
 export default function MenuSection() {
   const [activeTab, setActiveTab] = useState("brazilian");
