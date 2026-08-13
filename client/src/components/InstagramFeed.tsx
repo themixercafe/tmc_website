@@ -15,6 +15,7 @@ import imgWaffles from "@assets/tRIPLE_wAFFLES_1786544970112.jpg";
 import imgBenedict from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
 import imgTurkishSausage from "@assets/Turkish_Sausage_1786545424470.jpg";
 import imgTurkey from "@assets/Turkey_sand_3_1786545548991.png";
+import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
@@ -23,6 +24,7 @@ const instagramPosts = [
   { id: 4, image: imgBenedict, caption: "Dear Benedict — poached eggs, Hollandaise & Canadian bacon on a croissant 🥚🥐 #brunch #themixercafe" },
   { id: 5, image: imgTurkishSausage, caption: "Sucuk & egg fresh from the skillet 🇹🇷🍳 #turkishsausage #sucuk #themixercafe" },
   { id: 6, image: imgTurkey, caption: "Turkey sandwich on multigrain — fresh, clean & delicious 🥪 #sandwich #themixercafe" },
+  { id: 7, image: imgCafeInterior, caption: "Our beautiful display counter full of fresh pastries every morning ☕🥐 #themixercafe #boyntonbeach" },
 ];
 
 export default function InstagramFeed() {
