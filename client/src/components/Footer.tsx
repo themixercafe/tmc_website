@@ -62,21 +62,21 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="text-xl font-serif font-bold mb-6">Opening Hours</h4>
             <ul className="space-y-3 text-primary-foreground/80">
-              <li className="flex justify-between md:justify-start md:gap-8 border-b border-white/10 pb-2">
-                <span>Monday</span>
+              <li className="flex border-b border-white/10 pb-2">
+                <span className="w-28 shrink-0">Monday</span>
                 <span>Closed</span>
               </li>
-              <li className="flex justify-between md:justify-start md:gap-8 border-b border-white/10 pb-2">
-                <span>Tue - Thu</span>
-                <span>7:30 AM - 2:00 PM</span>
+              <li className="flex border-b border-white/10 pb-2">
+                <span className="w-28 shrink-0">Tue - Thu</span>
+                <span>7:30 AM – 2:00 PM</span>
               </li>
-              <li className="flex justify-between md:justify-start md:gap-8 border-b border-white/10 pb-2">
-                <span>Fri - Sat</span>
-                <span>7:30 AM - 3:00 PM</span>
+              <li className="flex border-b border-white/10 pb-2">
+                <span className="w-28 shrink-0">Fri - Sat</span>
+                <span>7:30 AM – 3:00 PM</span>
               </li>
-              <li className="flex justify-between md:justify-start md:gap-8 border-b border-white/10 pb-2">
-                <span>Sunday</span>
-                <span>8:00 AM - 2:00 PM</span>
+              <li className="flex border-b border-white/10 pb-2">
+                <span className="w-28 shrink-0">Sunday</span>
+                <span>8:00 AM – 2:00 PM</span>
               </li>
             </ul>
           </div>
