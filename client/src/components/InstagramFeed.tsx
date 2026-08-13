@@ -16,6 +16,7 @@ import imgBenedict from "@assets/eggbenedict_1786637834011.png";
 import imgTurkishSausage from "@assets/Turkish_Sausage_1786545424470.jpg";
 import imgTurkey from "@assets/Turkey_sand_3_1786545548991.png";
 import imgTartine from "@assets/Tartine_1786637872852.png";
+import imgCilbir from "@assets/ChatGPT_Image_Jul_4,_2026,_11_41_45_AM_1786638222613.png";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 
 const instagramPosts = [
@@ -25,6 +26,7 @@ const instagramPosts = [
   { id: 5, image: imgTurkishSausage, caption: "Sucuk & egg fresh from the skillet 🇹🇷🍳 #turkishsausage #sucuk #themixercafe" },
   { id: 6, image: imgTurkey, caption: "Turkey sandwich on multigrain — fresh, clean & delicious 🥪 #sandwich #themixercafe" },
   { id: 8, image: imgTartine, caption: "Croissant Tartine — two eggs, bacon, Swiss cheese, jam & butter 🥐🍳 #croissanttartine #frenchbreakfast #themixercafe" },
+  { id: 9, image: imgCilbir, caption: "Çılbır — two poached eggs on garlic yogurt with butter spice sauce 🍳🇹🇷 #cilbir #turkishbreakfast #themixercafe" },
 ];
 
 export default function InstagramFeed() {
