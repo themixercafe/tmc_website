@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@assets/IMG-20260804-WA0008_1786628257330.jpg";
+import heroImage from "@assets/IMG-20260812-WA0011_1786628335866.jpg";
 import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
