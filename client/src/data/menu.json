@@ -13,7 +13,7 @@
     { "name": "Menemen", "description": "Turkish-style scrambled eggs cooked with tomatoes, peppers, Turkish spices.", "price": "$14.95", "popular": true },
     { "name": "Cilbir", "description": "Two poached eggs, garlic yogurt with butter spices sauce and multigrain bread.", "price": "$12.90", "popular": false },
     { "name": "Turkish Platter", "description": "Two eggs, tomato salad with olives, honey, butter, cheese, Turkish bagel, Nutella and jelly.", "price": "$15.90", "popular": true },
-    { "name": "Spinach Feta Börek", "description": "Savory pastry with spinach and feta cheese.", "price": "$5.75", "popular": true, "checkAvailability": true },
+    { "name": "Spinach Feta Börek", "description": "Savory pastry with spinach and feta cheese.", "price": "$5.75", "popular": true, "checkAvailability": true }
   ],
   "french": [
     { "name": "Bacon, Egg & Cheese", "description": "Croissant, bacon, egg and cheese.", "price": "$12.30", "popular": true },
