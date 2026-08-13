@@ -17,6 +17,8 @@ import turkishTeaImage from "@assets/Turkish_Tea_1786545372363.jpg";
 import dearBenedictImage from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
 import turkishSausageImage from "@assets/Turkish_Sausage_1786545424470.jpg";
 import cappadociaBg from "@assets/cappadocia_bg.jpg";
+import eiffelBg from "@assets/eiffel_bg.jpg";
+import brazilBg from "@assets/brazil_bg.jpg";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
@@ -308,7 +310,13 @@ export default function MenuSection() {
           </div>
 
           <TabsContent value="brazilian" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.brazilian)}
+            <div
+              className="relative rounded-2xl overflow-hidden p-6"
+              style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+            >
+              <div className="absolute inset-0 bg-black/60 rounded-2xl" />
+              <div className="relative z-10">{renderMenuWithPhotos(menuItems.brazilian)}</div>
+            </div>
           </TabsContent>
           
           <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
@@ -328,7 +336,13 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.french)}
+            <div
+              className="relative rounded-2xl overflow-hidden p-6"
+              style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+            >
+              <div className="absolute inset-0 bg-black/60 rounded-2xl" />
+              <div className="relative z-10">{renderMenuWithPhotos(menuItems.french)}</div>
+            </div>
           </TabsContent>
 
           <TabsContent value="american" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
