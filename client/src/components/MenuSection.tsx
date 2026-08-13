@@ -312,11 +312,15 @@ export default function MenuSection() {
           </TabsContent>
           
           <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div className="relative rounded-2xl overflow-hidden">
-              <div
-                className="absolute inset-0 bg-cover bg-center opacity-15"
-                style={{ backgroundImage: `url(${cappadociaBg})` }}
-              />
+            <div
+              className="relative rounded-2xl overflow-hidden p-6"
+              style={{
+                backgroundImage: `url(${cappadociaBg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/60 rounded-2xl" />
               <div className="relative z-10">
                 {renderMenuWithPhotos(menuItems.turkish)}
               </div>
