@@ -3,7 +3,7 @@ import aboutImage from "@assets/Screenshot_20260101_133005_Instagram_17672924855
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 bg-secondary scroll-mt-24">
+    <section id="about" className="py-24 bg-black scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}

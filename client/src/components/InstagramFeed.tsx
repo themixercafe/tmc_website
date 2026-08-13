@@ -29,7 +29,7 @@ const instagramPosts = [
 
 export default function InstagramFeed() {
   return (
-    <section className="py-20 bg-secondary relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden">
        {/* Background accent */}
        <div className="absolute inset-0 bg-secondary/5 -skew-y-3 transform origin-top-left scale-110 z-0" />
 
