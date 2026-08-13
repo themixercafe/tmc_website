@@ -45,19 +45,20 @@ type MenuData = {
 const menuItems: MenuData = menuData as unknown as MenuData;
 
 const imageMap: Record<string, string> = {
-  "Coxinha": coxinhaImage,
-  "Queijo Quente - Combo": queijoQuenteImage,
-  "Misto Quente": mistoQuenteImage,
-  "Pão de Queijo": paodeQueijoImage,
-  "Empanada": empanadaImage,
-  "Espirra": espirraImage,
-  "Menemen": menemenImage,
-  "Bacon, Egg & Cheese": baconEggCheeseImage,
-  "Turkish Tea": turkishTeaImage,
-  "Dear Benedict*": dearBenedictImage,
-  "Sucuk Yumurta": turkishSausageImage,
-  "Spinach Feta Börek": spinachBorekImage,
-  "Turkey": turkeySandImage,
+  // Photos hidden from menu — available to restore anytime
+  // "Coxinha": coxinhaImage,
+  // "Queijo Quente - Combo": queijoQuenteImage,
+  // "Misto Quente": mistoQuenteImage,
+  // "Pão de Queijo": paodeQueijoImage,
+  // "Empanada": empanadaImage,
+  // "Espirra": espirraImage,
+  // "Menemen": menemenImage,
+  // "Bacon, Egg & Cheese": baconEggCheeseImage,
+  // "Turkish Tea": turkishTeaImage,
+  // "Dear Benedict*": dearBenedictImage,
+  // "Sucuk Yumurta": turkishSausageImage,
+  // "Spinach Feta Börek": spinachBorekImage,
+  // "Turkey": turkeySandImage,
 };
 
 const MenuItem = ({ item }: { item: MenuItem }) => {
