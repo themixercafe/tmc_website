@@ -314,7 +314,7 @@ export default function MenuSection() {
               className="relative rounded-2xl overflow-hidden p-6"
               style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
-              <div className="absolute inset-0 bg-black/60 rounded-2xl" />
+              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
               <div className="relative z-10">{renderMenuWithPhotos(menuItems.brazilian)}</div>
             </div>
           </TabsContent>
@@ -328,7 +328,7 @@ export default function MenuSection() {
                 backgroundPosition: "center",
               }}
             >
-              <div className="absolute inset-0 bg-black/60 rounded-2xl" />
+              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
               <div className="relative z-10">
                 {renderMenuWithPhotos(menuItems.turkish)}
               </div>
@@ -340,7 +340,7 @@ export default function MenuSection() {
               className="relative rounded-2xl overflow-hidden p-6"
               style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
-              <div className="absolute inset-0 bg-black/60 rounded-2xl" />
+              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
               <div className="relative z-10">{renderMenuWithPhotos(menuItems.french)}</div>
             </div>
           </TabsContent>
