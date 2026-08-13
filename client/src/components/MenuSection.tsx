@@ -16,6 +16,7 @@ import baconEggCheeseImage from "@assets/Bacon,_Egg_&_Cheese_1786545320586.jpg";
 import turkishTeaImage from "@assets/Turkish_Tea_1786545372363.jpg";
 import dearBenedictImage from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
 import turkishSausageImage from "@assets/Turkish_Sausage_1786545424470.jpg";
+import cappadociaBg from "@assets/cappadocia_bg.jpg";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
@@ -311,7 +312,15 @@ export default function MenuSection() {
           </TabsContent>
           
           <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.turkish)}
+            <div className="relative rounded-2xl overflow-hidden">
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-15"
+                style={{ backgroundImage: `url(${cappadociaBg})` }}
+              />
+              <div className="relative z-10">
+                {renderMenuWithPhotos(menuItems.turkish)}
+              </div>
+            </div>
           </TabsContent>
 
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
