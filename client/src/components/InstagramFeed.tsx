@@ -64,11 +64,11 @@ export default function InstagramFeed() {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-5xl mx-auto"
+          className="w-full max-w-6xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {instagramPosts.map((post) => (
-              <CarouselItem key={post.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={post.id} className="pl-4 md:basis-1/2">
                 <div className="group relative overflow-hidden rounded-xl bg-zinc-900 shadow-lg hover:shadow-xl transition-all duration-300 aspect-square">
                   <img
                     src={post.image}
