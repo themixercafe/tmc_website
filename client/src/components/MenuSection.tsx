@@ -16,9 +16,9 @@ import baconEggCheeseImage from "@assets/Bacon,_Egg_&_Cheese_1786545320586.jpg";
 import turkishTeaImage from "@assets/Turkish_Tea_1786545372363.jpg";
 import dearBenedictImage from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
 import turkishSausageImage from "@assets/Turkish_Sausage_1786545424470.jpg";
-import cappadociaBg from "@assets/cappadocia_bg.jpg";
-import eiffelBg from "@assets/eiffel_bg.jpg";
-import brazilBg from "@assets/brazil_bg.jpg";
+import cappadociaBg from "@assets/bg_cappadocia.jpg";
+import eiffelBg from "@assets/bg_eiffel.jpg";
+import brazilBg from "@assets/bg_brazil.jpg";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
