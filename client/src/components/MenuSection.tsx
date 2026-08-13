@@ -253,9 +253,12 @@ export default function MenuSection() {
         <div className="text-center mb-16">
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Explore Our Menu<br />
+            "Explore Our Menu"<br />
             <span className="text-white/60 text-xl md:text-2xl font-sans font-bold">A carefully curated selection of our favorite recipes passed down through generations.</span>
           </h2>
+          <p className="text-white/60 max-w-2xl mx-auto font-bold text-lg mt-2">
+            See even more options when you order online.
+          </p>
         </div>
 
         <Tabs 
