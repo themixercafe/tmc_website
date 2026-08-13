@@ -256,8 +256,8 @@ export default function MenuSection() {
             "Explore Our Menu"<br />
             <span className="text-white/60 text-xl md:text-2xl font-sans font-bold">A carefully curated selection of our favorite recipes passed down through generations.</span>
           </h2>
-          <p className="text-secondary max-w-2xl mx-auto font-bold text-lg mt-2">
-            See even more options when you order online.
+          <p className="max-w-2xl mx-auto font-bold text-lg mt-2">
+            <span className="text-white bg-secondary/80 px-2 py-0.5 rounded">See even more options when you order online.</span>
           </p>
         </div>
 
