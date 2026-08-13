@@ -18,7 +18,7 @@ import imgTurkey from "@assets/Turkey_sand_3_1786545548991.png";
 import imgTartine from "@assets/Tartine_1786637872852.png";
 import imgCilbir from "@assets/ChatGPT_Image_Jul_4,_2026,_11_41_45_AM_1786638222613.png";
 import imgBrazilianOmelette from "@assets/brazilian_omelette_1786638409212.png";
-import imgSucuk from "@assets/sucuk_two_eggs.jpg";
+import imgSucuk from "@assets/sucuk_two_eggs_2.jpg";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 
 const instagramPosts = [
