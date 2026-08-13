@@ -24,7 +24,6 @@ const instagramPosts = [
   { id: 4, image: imgBenedict, caption: "Dear Benedict — poached eggs, Hollandaise & Canadian bacon on a croissant 🥚🥐 #brunch #themixercafe" },
   { id: 5, image: imgTurkishSausage, caption: "Sucuk & egg fresh from the skillet 🇹🇷🍳 #turkishsausage #sucuk #themixercafe" },
   { id: 6, image: imgTurkey, caption: "Turkey sandwich on multigrain — fresh, clean & delicious 🥪 #sandwich #themixercafe" },
-  { id: 7, image: imgCafeInterior, caption: "Our beautiful display counter full of fresh pastries every morning ☕🥐 #themixercafe #boyntonbeach" },
   { id: 8, image: imgTartine, caption: "Croissant Tartine — two eggs, bacon, Swiss cheese, jam & butter 🥐🍳 #croissanttartine #frenchbreakfast #themixercafe" },
 ];
 
