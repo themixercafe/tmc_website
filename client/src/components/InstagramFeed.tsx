@@ -10,7 +10,7 @@ import {
 
 // Cafe Photos
 import imgBaklava from "@assets/Baklava_UberEats_2880x2304_1786544856975.jpg";
-import imgMenemen from "@assets/menemen_clean.jpg";
+import imgMenemen from "@assets/Mdnemen_1786637802919.png";
 import imgWaffles from "@assets/tRIPLE_wAFFLES_1786544970112.jpg";
 import imgBenedict from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
 import imgTurkishSausage from "@assets/Turkish_Sausage_1786545424470.jpg";
