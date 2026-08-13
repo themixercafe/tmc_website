@@ -252,9 +252,10 @@ export default function MenuSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Our Kitchen</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            Explore Our Menu <span className="text-white/60 text-2xl md:text-3xl font-sans font-bold">— A carefully curated selection of our favorite recipes passed down through generations.</span>
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Explore Our Menu</h2>
+          <p className="text-white/60 max-w-2xl mx-auto font-bold">
+            A carefully curated selection of our favorite recipes passed down through generations.
+          </p>
         </div>
 
         <Tabs 
