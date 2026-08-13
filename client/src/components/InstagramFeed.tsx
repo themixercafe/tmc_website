@@ -51,7 +51,7 @@ export default function InstagramFeed() {
             Follow Our Journey
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto mb-8 font-bold">
-            A glimpse into our daily creations, fresh bakes, and cafe vibes. Tag us to be featured!
+            A carefully curated selection of our favorite recipes passed down through generations.
           </p>
           
           <Button 
