@@ -50,9 +50,6 @@ export default function InstagramFeed() {
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
             Follow Our Journey
           </h2>
-          <p className="text-white/60 max-w-2xl mx-auto mb-8 font-bold">
-            A carefully curated selection of our favorite recipes passed down through generations.
-          </p>
           
           <Button 
             variant="outline"
