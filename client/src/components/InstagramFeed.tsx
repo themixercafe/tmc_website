@@ -18,14 +18,13 @@ import imgTurkey from "@assets/Turkey_sand_3_1786545548991.png";
 import imgTartine from "@assets/Tartine_1786637872852.png";
 import imgCilbir from "@assets/ChatGPT_Image_Jul_4,_2026,_11_41_45_AM_1786638222613.png";
 import imgBrazilianOmelette from "@assets/brazilian_omelette_1786638409212.png";
-import imgSucuk from "@assets/sucuk_two_eggs_2.jpg";
+import imgSucuk from "@assets/sucuk_black_bowl.jpg";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
   { id: 2, image: imgMenemen, caption: "Turkish scrambled eggs done right 🍳🇹🇷 #menemen #turkishbreakfast #themixercafe", objectPosition: "top" },
   { id: 4, image: imgBenedict, caption: "Dear Benedict — poached eggs, Hollandaise & Canadian bacon on a croissant 🥚🥐 #brunch #themixercafe" },
-  { id: 5, image: imgTurkishSausage, caption: "Sucuk & egg fresh from the skillet 🇹🇷🍳 #turkishsausage #sucuk #themixercafe" },
   { id: 6, image: imgTurkey, caption: "Turkey sandwich on multigrain — fresh, clean & delicious 🥪 #sandwich #themixercafe" },
   { id: 8, image: imgTartine, caption: "Croissant Tartine — two eggs, bacon, Swiss cheese, jam & butter 🥐🍳 #croissanttartine #frenchbreakfast #themixercafe" },
   { id: 9, image: imgCilbir, caption: "Çılbır — two poached eggs on garlic yogurt with butter spice sauce 🍳🇹🇷 #cilbir #turkishbreakfast #themixercafe" },
