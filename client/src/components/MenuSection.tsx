@@ -247,7 +247,7 @@ export default function MenuSection() {
   );
 
   return (
-    <section id="menu" className="py-20 relative overflow-hidden scroll-mt-24" style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+    <section id="menu" className="py-20 relative overflow-hidden scroll-mt-24" style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "auto 100%", backgroundPosition: "center top", backgroundRepeat: "no-repeat" }}>
       {/* Dark overlay for readability */}
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
