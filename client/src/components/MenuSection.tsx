@@ -22,6 +22,7 @@ import mixerArtwork from "@assets/IMG-20260804-WA0008(1)_1786720518928.jpg";
 import eiffelBg from "@assets/bg_eiffel.jpg";
 import brazilBg from "@assets/bg_brazil.jpg";
 import americanBg from "@assets/cafe_left_noflower.jpg";
+import classicsBg from "@assets/classics_collage.jpg";
 import teapotBg from "@assets/teapot_new.png";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
@@ -250,7 +251,7 @@ export default function MenuSection() {
     brazilian: { image: brazilBg, filter: "brightness(1.2) saturate(1.1)", position: "center" },
     turkish:   { image: cappadociaBg, position: "center 30%" },
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
-    american:  { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
+    american:  { image: classicsBg, position: "center" },
     desserts:  { image: teapotBg, position: "center" },
     beverages: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     smoothies: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
