@@ -18,6 +18,7 @@ import dearBenedictImage from "@assets/Dear_Benedict_(2)_1786545390662.jpg";
 import turkishSausageImage from "@assets/Turkish_Sausage_1786545424470.jpg";
 import spinachBorekImage from "@assets/Spinach_Borek_1786633055227.avif";
 import cappadociaBg from "@assets/bg_cappadocia.jpg";
+import mixerArtwork from "@assets/IMG-20260804-WA0008(1)_1786720518928.jpg";
 import eiffelBg from "@assets/bg_eiffel.jpg";
 import brazilBg from "@assets/bg_brazil.jpg";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
@@ -245,6 +246,9 @@ export default function MenuSection() {
 
   return (
     <section id="menu" className="py-20 bg-black relative overflow-hidden scroll-mt-24">
+      {/* Mixer Cafe artwork background */}
+      <img src={mixerArtwork} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-center opacity-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/70 pointer-events-none" />
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
