@@ -20,6 +20,7 @@ import imgCilbir from "@assets/ChatGPT_Image_Jul_4,_2026,_11_41_45_AM_1786638222
 import imgBrazilianOmelette from "@assets/brazilian_omelette_1786638409212.png";
 import imgSucuk from "@assets/sucuk_black_bowl.jpg";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
+import imgTurkishTea from "@assets/Turkish_Tea_1786708566301.jpg";
 
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
@@ -30,6 +31,7 @@ const instagramPosts = [
   { id: 9, image: imgCilbir, caption: "Çılbır — two poached eggs on garlic yogurt with butter spice sauce 🍳🇹🇷 #cilbir #turkishbreakfast #themixercafe" },
   { id: 10, image: imgBrazilianOmelette, caption: "Brazilian omelette stuffed with ham, cheese & green onion 🇧🇷🍳 #brazilianbreakfast #omelette #themixercafe" },
   { id: 11, image: imgSucuk, caption: "Sucuk Yumurta — Turkish sausage with two eggs cooked in a skillet 🇹🇷🍳 #sucuk #turkishbreakfast #themixercafe" },
+  { id: 12, image: imgTurkishTea, caption: "Turkish çay — served the traditional way in a tulip glass ☕🇹🇷 #turkishtea #cay #themixercafe" },
 ];
 
 export default function InstagramFeed() {
