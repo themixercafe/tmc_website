@@ -249,11 +249,11 @@ export default function MenuSection() {
   const tabBgMap: Record<string, { image: string; filter?: string; position?: string }> = {
     brazilian: { image: brazilBg, filter: "brightness(1.2) saturate(1.1)", position: "center" },
     turkish:   { image: cappadociaBg, position: "center 30%" },
-    french:    { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
-    american:  { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
+    french:    { image: eiffelBg, filter: "brightness(1.4) saturate(0.9) hue-rotate(10deg)", position: "center" },
+    american:  { image: eiffelBg, filter: "brightness(1.4) saturate(0.9) hue-rotate(10deg)", position: "center" },
     desserts:  { image: teapotBg, position: "center" },
-    beverages: { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
-    smoothies: { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
+    beverages: { image: eiffelBg, filter: "brightness(1.4) saturate(0.9) hue-rotate(10deg)", position: "center" },
+    smoothies: { image: eiffelBg, filter: "brightness(1.4) saturate(0.9) hue-rotate(10deg)", position: "center" },
   };
   const currentBg = tabBgMap[activeTab] ?? tabBgMap.french;
 
