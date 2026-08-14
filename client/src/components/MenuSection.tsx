@@ -334,7 +334,7 @@ export default function MenuSection() {
               style={{
                 backgroundImage: `url(${cappadociaBg})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "center 30%",
               }}
             >
               <div className="absolute inset-0 bg-black/35 rounded-2xl" />
