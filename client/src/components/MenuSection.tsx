@@ -347,7 +347,7 @@ export default function MenuSection() {
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
             <div
               className="relative rounded-2xl overflow-hidden p-6"
-              style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+              style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "160%", backgroundPosition: "center 40%" }}
             >
               <div className="absolute inset-0 bg-black/35 rounded-2xl" />
               <div className="relative z-10">{renderMenuWithPhotos(menuItems.french)}</div>
