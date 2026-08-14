@@ -247,7 +247,7 @@ export default function MenuSection() {
   return (
     <section id="menu" className="py-20 bg-black relative overflow-hidden scroll-mt-24">
       {/* Mixer Cafe artwork background */}
-      <img src={mixerArtwork} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-center opacity-10 pointer-events-none" />
+      <img src={mixerArtwork} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-center opacity-5 pointer-events-none" />
       <div className="absolute inset-0 bg-black/70 pointer-events-none" />
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
