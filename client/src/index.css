@@ -73,6 +73,11 @@
   }
 }
 
+@keyframes bgFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;

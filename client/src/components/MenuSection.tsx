@@ -262,13 +262,14 @@ export default function MenuSection() {
       {/* Dynamic background per tab */}
       <div
         key={activeTab}
-        className="absolute inset-0 transition-all duration-700"
+        className="absolute inset-0"
         style={{
           backgroundImage: `url(${currentBg.image})`,
           backgroundSize: "cover",
           backgroundPosition: currentBg.position ?? "center",
           filter: currentBg.filter,
-          opacity: 1,
+          opacity: 0.45,
+          animation: "bgFadeIn 0.8s ease",
         }}
       />
       {/* Decorative background element */}
