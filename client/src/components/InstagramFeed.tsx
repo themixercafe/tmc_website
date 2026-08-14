@@ -74,7 +74,7 @@ export default function InstagramFeed() {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-4xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {instagramPosts.map((post) => (
