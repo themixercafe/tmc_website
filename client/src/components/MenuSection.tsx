@@ -320,11 +320,19 @@ export default function MenuSection() {
           </div>
 
           <TabsContent value="brazilian" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.brazilian)}
+            <div className="relative rounded-2xl overflow-hidden p-6"
+              style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
+              <div className="relative z-10">{renderMenuWithPhotos(menuItems.brazilian)}</div>
+            </div>
           </TabsContent>
 
           <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.turkish)}
+            <div className="relative rounded-2xl overflow-hidden p-6"
+              style={{ backgroundImage: `url(${cappadociaBg})`, backgroundSize: "cover", backgroundPosition: "center 30%" }}>
+              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
+              <div className="relative z-10">{renderMenuWithPhotos(menuItems.turkish)}</div>
+            </div>
           </TabsContent>
 
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
