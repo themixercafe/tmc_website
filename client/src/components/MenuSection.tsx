@@ -346,11 +346,11 @@ export default function MenuSection() {
 
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
             <div
-              className="relative rounded-2xl overflow-hidden p-6"
+              className="relative overflow-hidden -mx-4 px-4 py-8"
               style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "160%", backgroundPosition: "center 40%" }}
             >
-              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
-              <div className="relative z-10">{renderMenuWithPhotos(menuItems.french)}</div>
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative z-10 max-w-4xl mx-auto">{renderMenuWithPhotos(menuItems.french)}</div>
             </div>
           </TabsContent>
 
