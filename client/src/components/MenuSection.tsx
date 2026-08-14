@@ -26,7 +26,7 @@ import eiffelBg from "@assets/bg_eiffel.jpg";
 import brazilBg from "@assets/bg_brazil.jpg";
 import americanBg from "@assets/cafe_left_noflower.jpg";
 import classicsBg from "@assets/classics_collage.jpg";
-import teapotBg from "@assets/teapot_with_cake.png";
+import teapotBg from "@assets/teapot_full.png";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
