@@ -23,6 +23,7 @@ import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 import imgTurkishTea from "@assets/Turkish_Tea_1786708566301.jpg";
 import imgTurkishTray from "@assets/Turkish_single_tray_no_rings.jpg";
 import imgWafflesNew from "@assets/tRIPLE_wAFFLES_1786709142739.jpg";
+import imgTurkishSausageSand from "@assets/Turkish_sausage_sand._1786717907268.png";
 
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
@@ -36,6 +37,7 @@ const instagramPosts = [
   { id: 12, image: imgTurkishTea, caption: "Turkish çay — served the traditional way in a tulip glass ☕🇹🇷 #turkishtea #cay #themixercafe" },
   { id: 13, image: imgTurkishTray, caption: "Turkish coffee on a silver tray — elegance in every sip ☕✨ #turkishcoffee #themixercafe" },
   { id: 14, image: imgWafflesNew, caption: "Triple waffles loaded with strawberries, bananas & chocolate drizzle 🧇🍓 #waffles #themixercafe" },
+  { id: 15, image: imgTurkishSausageSand, caption: "Turkish Sausage sandwich — Sucuk, tomatoes, arugula & Swiss on multigrain 🇹🇷🥪 #sucuk #turkishsausage #themixercafe" },
 ];
 
 export default function InstagramFeed() {
