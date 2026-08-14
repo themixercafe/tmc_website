@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+
+// Toggle to show/hide prices across the entire menu
+const SHOW_PRICES = false;
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -133,7 +136,7 @@ const MenuItem = ({ item, transparent }: { item: MenuItem; transparent?: boolean
                 </Popover>
               )}
             </div>
-            <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>
+            {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>}
           </CardHeader>
           <CardContent className="p-0">
             <CardDescription className="text-white/80 leading-relaxed font-bold">
@@ -189,7 +192,7 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
                 </Popover>
               )}
             </div>
-            <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>
+            {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>}
           </div>
           <p className="text-white/80 mt-1 text-lg leading-relaxed font-bold">{item.description}</p>
         </div>
