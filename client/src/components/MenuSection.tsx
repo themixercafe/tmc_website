@@ -246,10 +246,31 @@ export default function MenuSection() {
     </div>
   );
 
+  const tabBgMap: Record<string, { image: string; filter?: string; position?: string }> = {
+    brazilian: { image: brazilBg, filter: "brightness(1.2) saturate(1.1)", position: "center" },
+    turkish:   { image: cappadociaBg, position: "center 30%" },
+    french:    { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
+    american:  { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
+    desserts:  { image: teapotBg, position: "center" },
+    beverages: { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
+    smoothies: { image: eiffelBg, filter: "brightness(1.3) saturate(1.2)", position: "center" },
+  };
+  const currentBg = tabBgMap[activeTab] ?? tabBgMap.french;
+
   return (
     <section id="menu" className="py-20 relative overflow-hidden scroll-mt-24" style={{ backgroundColor: "#1e0e05" }}>
-      {/* Eiffel Tower background — blurred & fading */}
-      <div className="absolute inset-0 scale-110" style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", opacity: 1, filter: "brightness(1.3) saturate(1.2)" }} />
+      {/* Dynamic background per tab */}
+      <div
+        key={activeTab}
+        className="absolute inset-0 transition-all duration-700"
+        style={{
+          backgroundImage: `url(${currentBg.image})`,
+          backgroundSize: "cover",
+          backgroundPosition: currentBg.position ?? "center",
+          filter: currentBg.filter,
+          opacity: 1,
+        }}
+      />
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
@@ -321,17 +342,11 @@ export default function MenuSection() {
           </div>
 
           <TabsContent value="brazilian" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div className="relative overflow-hidden -mx-4 px-4 py-8">
-              <div className="absolute inset-0" style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 1, filter: "brightness(1.2) saturate(1.1)" }} />
-              <div className="relative z-10 max-w-4xl mx-auto">{renderMenuWithPhotos(menuItems.brazilian)}</div>
-            </div>
+            {renderMenuWithPhotos(menuItems.brazilian)}
           </TabsContent>
 
           <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div className="relative rounded-2xl overflow-hidden p-6">
-              <div className="absolute inset-0 scale-150 rounded-2xl" style={{ backgroundImage: `url(${cappadociaBg})`, backgroundSize: "cover", backgroundPosition: "center 30%", opacity: 1 }} />
-              <div className="relative z-10">{renderMenuWithPhotos(menuItems.turkish)}</div>
-            </div>
+            {renderMenuWithPhotos(menuItems.turkish)}
           </TabsContent>
 
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
