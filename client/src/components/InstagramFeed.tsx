@@ -22,7 +22,7 @@ import imgSucuk from "@assets/sucuk_black_bowl.jpg";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 import imgTurkishTea from "@assets/Turkish_Tea_1786708566301.jpg";
 import imgTurkishTray from "@assets/Turkish_single_tray_clean.jpg";
-import imgWafflesNew from "@assets/tRIPLE_wAFFLES_1786709142739.jpg";
+import imgWafflesNew from "@assets/tRIPLE_wAFFLES_straight.jpg";
 import imgTurkishSausageSand from "@assets/Turkish_sausage_sand._1786717907268.png";
 
 const instagramPosts = [
