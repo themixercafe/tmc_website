@@ -131,7 +131,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
                 </Popover>
               )}
             </div>
-            <span className="font-bold text-accent whitespace-nowrap ml-2">{item.price}</span>
+            <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>
           </CardHeader>
           <CardContent className="p-0">
             <CardDescription className="text-white/80 leading-relaxed font-bold">
