@@ -251,7 +251,7 @@ export default function MenuSection() {
     brazilian: { image: brazilBg, filter: "brightness(1.2) saturate(1.1)", position: "center" },
     turkish:   { image: cappadociaBg, position: "center 30%" },
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
-    american:  { image: classicsBg, position: "center", size: "50%" },
+    american:  { image: classicsBg, position: "center" },
     desserts:  { image: teapotBg, position: "center" },
     beverages: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     smoothies: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
