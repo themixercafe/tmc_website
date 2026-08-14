@@ -60,7 +60,7 @@
   },
   "desserts": {
     "Cake": [
-      { "name": "Turkish Carrots", "description": "", "price": "$4.00", "popular": true },
+      { "name": "Turkish Cake", "description": "Fluffy fresh carrot cake, with no milk or oleo. Rich in walnuts.", "price": "$4.00", "popular": true },
       { "name": "Orange, Walnuts and Raisin", "description": "", "price": "$4.00", "popular": false },
       { "name": "Apple, Walnut and Raisin", "description": "", "price": "$4.00", "popular": false },
       { "name": "Corn Meal", "description": "", "price": "$4.00", "popular": false },
