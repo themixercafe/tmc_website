@@ -91,7 +91,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         </div>
       )}
 
-      <Card className="border-none shadow-sm bg-white/10 hover:bg-white/20 transition-colors duration-300 group h-full overflow-hidden">
+      <Card className="border-none shadow-sm bg-black/70 hover:bg-black/85 transition-colors duration-300 group h-full overflow-hidden">
         {/* Photo on top */}
         {image && (
           <div
