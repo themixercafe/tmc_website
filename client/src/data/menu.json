@@ -47,8 +47,8 @@
       { "name": "Sucuk Omelette", "description": "Turkish beef sausage and cheese.", "price": "$13.95", "popular": false }
     ],
     "Waffles": [
-      { "name": "Gourmet", "description": "Nutella.", "price": "$7.95", "popular": false },
-      { "name": "Double", "description": "Nutella and banana.", "price": "$8.95", "popular": false },
+      { "name": "Gourmet", "description": "Nutella.", "price": "$8.95", "popular": false },
+      { "name": "Double", "description": "Nutella and banana.", "price": "$10.95", "popular": false },
       { "name": "Triple", "description": "Nutella, banana and strawberry.", "price": "$10.95", "popular": true }
     ],
     "Pancakes": [
