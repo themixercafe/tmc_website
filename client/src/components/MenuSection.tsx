@@ -21,7 +21,7 @@ import cappadociaBg from "@assets/bg_cappadocia.jpg";
 import mixerArtwork from "@assets/IMG-20260804-WA0008(1)_1786720518928.jpg";
 import eiffelBg from "@assets/bg_eiffel.jpg";
 import brazilBg from "@assets/bg_brazil.jpg";
-import americanBg from "@assets/cafe_right_frames.jpg";
+import americanBg from "@assets/cafe_both_frames.jpg";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
