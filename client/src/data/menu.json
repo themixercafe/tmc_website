@@ -59,7 +59,24 @@
     ]
   },
   "desserts": {
-    "Pastries": []
+    "Cake": [
+      { "name": "Turkish Carrots", "description": "", "price": "$4.00", "popular": true },
+      { "name": "Orange, Walnuts and Raisin", "description": "", "price": "$4.00", "popular": false },
+      { "name": "Apple, Walnut and Raisin", "description": "", "price": "$4.00", "popular": false },
+      { "name": "Corn Meal", "description": "", "price": "$4.00", "popular": false },
+      { "name": "Corn Cake", "description": "", "price": "$4.00", "popular": false, "checkAvailability": true }
+    ],
+    "Cookies & Sweets": [
+      { "name": "Brownie Mascarpone", "description": "Rich chocolate brownie topped with mascarpone.", "price": "$4.00", "popular": true },
+      { "name": "Pistachio Dry Baklava", "description": "", "price": "$4.00", "popular": false },
+      { "name": "Pink Cookies", "description": "Pistachios, Walnuts or Figs.", "price": "$1.75", "popular": false }
+    ],
+    "Muffins & Croissants": [
+      { "name": "Blueberries Muffin", "description": "", "price": "$3.25", "popular": false },
+      { "name": "Almond Croissant", "description": "", "price": "$3.25", "popular": false },
+      { "name": "Chocolate Croissant", "description": "", "price": "$3.25", "popular": false },
+      { "name": "Apple Turn Over Croissant", "description": "", "price": "$3.25", "popular": false }
+    ]
   },
   "beverages": {
     "Hot Coffee": [
