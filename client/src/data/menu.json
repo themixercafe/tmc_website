@@ -40,9 +40,9 @@
     ],
     "Omelettes": [
       { "name": "Cheese", "description": "White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$9.95", "popular": false },
-      { "name": "Mushroom & Cheese", "description": "White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$10.95", "popular": false },
+      { "name": "Mushroom & Cheese", "description": "White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$12.95", "popular": false },
       { "name": "Bacon & Cheese", "description": "White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$13.95", "popular": false },
-      { "name": "Brazilian", "description": "Cheese, ham, tomato and green onions. White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$13.95", "popular": true },
+      { "name": "Brazilian", "description": "Cheese, ham, tomato and green onions. White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$15.95", "popular": true },
       { "name": "Florentine", "description": "Cheese, spinach, mushrooms and tomatoes. White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$14.50", "popular": false },
       { "name": "Sucuk Omelette", "description": "Turkish beef sausage and cheese.", "price": "$13.95", "popular": false }
     ],
