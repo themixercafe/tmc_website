@@ -247,7 +247,7 @@ export default function MenuSection() {
   );
 
   return (
-    <section id="menu" className="py-20 relative overflow-hidden scroll-mt-24" style={{ backgroundColor: "#c8960c" }}>
+    <section id="menu" className="py-20 relative overflow-hidden scroll-mt-24" style={{ backgroundColor: "#3b1a08" }}>
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
