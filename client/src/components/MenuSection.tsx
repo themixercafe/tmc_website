@@ -357,7 +357,9 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="american" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderCategoryWithSubsections(menuItems.american)}
+            <div className="rounded-2xl p-6" style={{ backgroundColor: "rgba(255,245,225,0.08)" }}>
+              {renderCategoryWithSubsections(menuItems.american)}
+            </div>
           </TabsContent>
 
           <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
