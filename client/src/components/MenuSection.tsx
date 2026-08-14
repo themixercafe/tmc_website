@@ -64,7 +64,7 @@ const imageMap: Record<string, string> = {
   // "Turkey": turkeySandImage,
 };
 
-const MenuItem = ({ item }: { item: MenuItem }) => {
+const MenuItem = ({ item, transparent }: { item: MenuItem; transparent?: boolean }) => {
   const image = imageMap[item.name];
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
@@ -91,7 +91,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         </div>
       )}
 
-      <Card className="border-none shadow-sm bg-black/70 hover:bg-black/85 transition-colors duration-300 group h-full overflow-hidden">
+      <Card className={`border-none shadow-sm transition-colors duration-300 group h-full overflow-hidden ${transparent ? "bg-transparent hover:bg-white/10" : "bg-black/70 hover:bg-black/85"}`}>
         {/* Photo on top */}
         {image && (
           <div
@@ -228,7 +228,7 @@ export default function MenuSection() {
     }, 0);
   };
 
-  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>) => (
+  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean) => (
     <div className="space-y-10">
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
@@ -238,7 +238,7 @@ export default function MenuSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {items.map((item, idx) => (
-              <MenuItem key={idx} item={item} />
+              <MenuItem key={idx} item={item} transparent={transparent} />
             ))}
           </div>
         </div>
@@ -355,7 +355,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="american" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderCategoryWithSubsections(menuItems.american)}
+            {renderCategoryWithSubsections(menuItems.american, true)}
           </TabsContent>
 
           <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
