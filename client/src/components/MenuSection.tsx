@@ -232,14 +232,16 @@ export default function MenuSection() {
     }, 0);
   };
 
-  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean) => (
+  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean) => (
     <div className="space-y-10">
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
-          <div className="flex items-center gap-4 mb-6">
-            <h3 className="text-2xl font-serif font-bold text-secondary">{category}</h3>
-            <div className="h-px bg-white/20 flex-1" />
-          </div>
+          {!hideHeaders && (
+            <div className="flex items-center gap-4 mb-6">
+              <h3 className="text-2xl font-serif font-bold text-secondary">{category}</h3>
+              <div className="h-px bg-white/20 flex-1" />
+            </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {items.map((item, idx) => (
               <MenuItem key={idx} item={item} transparent={transparent} />
@@ -363,7 +365,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderCategoryWithSubsections(menuItems.desserts, true)}
+            {renderCategoryWithSubsections(menuItems.desserts, true, true)}
           </TabsContent>
 
           <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
