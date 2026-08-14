@@ -250,12 +250,12 @@ export default function MenuSection() {
     </div>
   );
 
-  const tabBgMap: Record<string, { image: string; filter?: string; position?: string; size?: string }> = {
+  const tabBgMap: Record<string, { image: string; filter?: string; position?: string; size?: string; opacity?: number }> = {
     brazilian: { image: brazilBg, filter: "brightness(1.2) saturate(1.1)", position: "center" },
     turkish:   { image: cappadociaBg, position: "center 30%" },
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     american:  { image: classicsBg, position: "center" },
-    desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)" },
+    desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.18 },
     beverages: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     smoothies: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
   };
@@ -272,7 +272,7 @@ export default function MenuSection() {
           backgroundSize: currentBg.size ?? "cover",
           backgroundPosition: currentBg.position ?? "center",
           filter: currentBg.filter,
-          opacity: 0.3,
+          opacity: currentBg.opacity ?? 0.3,
           animation: "bgFadeIn 0.8s ease",
         }}
       />
