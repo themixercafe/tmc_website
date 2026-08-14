@@ -42,12 +42,12 @@ const instagramPosts = [
 
 export default function InstagramFeed() {
   return (
-    <section className="py-20 bg-secondary relative overflow-hidden">
+    <section className="py-10 bg-secondary relative overflow-hidden">
        {/* Background accent */}
        <div className="absolute inset-0 bg-secondary/5 -skew-y-3 transform origin-top-left scale-110 z-0" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-3 mb-4">
              <div className="bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] p-0.5 rounded-full">
                 <div className="bg-white p-1.5 rounded-full">
@@ -78,7 +78,7 @@ export default function InstagramFeed() {
         >
           <CarouselContent className="-ml-4">
             {instagramPosts.map((post) => (
-              <CarouselItem key={post.id} className="pl-4 md:basis-1/2 lg:basis-1/2">
+              <CarouselItem key={post.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="group relative overflow-hidden rounded-xl bg-zinc-900 shadow-lg hover:shadow-xl transition-all duration-300 aspect-square">
                   <img
                     src={post.image}
