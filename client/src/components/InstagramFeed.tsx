@@ -36,7 +36,7 @@ const instagramPosts = [
   { id: 11, image: imgSucuk, caption: "Sucuk Yumurta — Turkish sausage with two eggs cooked in a skillet 🇹🇷🍳 #sucuk #turkishbreakfast #themixercafe" },
   { id: 12, image: imgTurkishTea, caption: "Turkish çay — served the traditional way in a tulip glass ☕🇹🇷 #turkishtea #cay #themixercafe" },
   { id: 13, image: imgTurkishTray, caption: "Turkish coffee on a silver tray — elegance in every sip ☕✨ #turkishcoffee #themixercafe" },
-  { id: 14, image: imgWafflesNew, caption: "Triple waffles loaded with strawberries, bananas & chocolate drizzle 🧇🍓 #waffles #themixercafe", objectPosition: "top" },
+  { id: 14, image: imgWafflesNew, caption: "Triple waffles loaded with strawberries, bananas & chocolate drizzle 🧇🍓 #waffles #themixercafe", objectPosition: "center 70%" },
   { id: 15, image: imgTurkishSausageSand, caption: "Turkish Sausage sandwich — Sucuk, tomatoes, arugula & Swiss on multigrain 🇹🇷🥪 #sucuk #turkishsausage #themixercafe" },
 ];
 
