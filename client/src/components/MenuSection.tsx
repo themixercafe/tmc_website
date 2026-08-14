@@ -26,7 +26,7 @@ import eiffelBg from "@assets/bg_eiffel.jpg";
 import brazilBg from "@assets/bg_brazil.jpg";
 import americanBg from "@assets/cafe_left_noflower.jpg";
 import classicsBg from "@assets/classics_collage.jpg";
-import teapotBg from "@assets/teapot_new.png";
+import teapotBg from "@assets/teapot_full.png";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
@@ -255,7 +255,7 @@ export default function MenuSection() {
     turkish:   { image: cappadociaBg, position: "center 30%" },
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     american:  { image: classicsBg, position: "center" },
-    desserts:  { image: teapotBg, position: "5% center", size: "100%", filter: "brightness(1.5) saturate(1.2) contrast(0.9)" },
+    desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)" },
     beverages: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     smoothies: { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
   };
