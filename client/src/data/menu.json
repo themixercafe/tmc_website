@@ -16,8 +16,8 @@
     { "name": "Spinach Feta Börek", "description": "Savory pastry with spinach and feta cheese.", "price": "$5.75", "popular": true, "checkAvailability": true }
   ],
   "french": [
-    { "name": "Bacon, Egg & Cheese", "description": "Croissant, bacon, egg and cheese.", "price": "$12.30", "popular": true },
-    { "name": "Croissant Tartine", "description": "Two eggs, bacon, Swiss cheese, croissant, jam, butter and black coffee.", "price": "$13.90", "popular": false },
+    { "name": "Bacon, Egg & Cheese", "description": "Croissant, bacon, egg and cheese.", "price": "$12.95", "popular": true },
+    { "name": "Croissant Tartine", "description": "Two eggs, bacon, Swiss cheese, croissant, jam, butter and black coffee.", "price": "$14.90", "popular": false },
     { "name": "Dear Benedict*", "description": "Two poached eggs, croissant, Hollandaise sauce, Canadian bacon and tomato.", "price": "$15.90", "popular": true },
     { "name": "Butter Croissant", "description": "Classic flaky french pastry.", "price": "$3.75", "popular": true },
     { "name": "Chocolate Croissant", "description": "Croissant filled with chocolate.", "price": "$4.25", "popular": true },
