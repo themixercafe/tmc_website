@@ -321,53 +321,23 @@ export default function MenuSection() {
           </div>
 
           <TabsContent value="brazilian" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div
-              className="relative rounded-2xl overflow-hidden p-6"
-              style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
-            >
-              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
-              <div className="relative z-10">{renderMenuWithPhotos(menuItems.brazilian)}</div>
-            </div>
+            {renderMenuWithPhotos(menuItems.brazilian)}
           </TabsContent>
-          
+
           <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div
-              className="relative rounded-2xl overflow-hidden p-6"
-              style={{
-                backgroundImage: `url(${cappadociaBg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center 30%",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/35 rounded-2xl" />
-              <div className="relative z-10">
-                {renderMenuWithPhotos(menuItems.turkish)}
-              </div>
-            </div>
+            {renderMenuWithPhotos(menuItems.turkish)}
           </TabsContent>
 
           <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div
-              className="relative overflow-hidden -mx-4 px-4 py-8"
-              style={{ backgroundImage: `url(${eiffelBg})`, backgroundSize: "160%", backgroundPosition: "center 40%" }}
-            >
-              <div className="absolute inset-0 bg-black/40" />
-              <div className="relative z-10 max-w-4xl mx-auto">{renderMenuWithPhotos(menuItems.french)}</div>
-            </div>
+            {renderMenuWithPhotos(menuItems.french)}
           </TabsContent>
 
           <TabsContent value="american" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div className="rounded-2xl p-6" style={{ backgroundColor: "rgba(255,245,225,0.08)" }}>
-              {renderCategoryWithSubsections(menuItems.american)}
-            </div>
+            {renderCategoryWithSubsections(menuItems.american)}
           </TabsContent>
 
           <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div className="relative rounded-2xl overflow-hidden p-6"
-              style={{ backgroundImage: `url(${teapotBg})`, backgroundSize: "100% 100%", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
-              <div className="absolute inset-0 bg-black/50 rounded-2xl" />
-              <div className="relative z-10">{renderCategoryWithSubsections(menuItems.desserts)}</div>
-            </div>
+            {renderCategoryWithSubsections(menuItems.desserts)}
           </TabsContent>
 
           <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
