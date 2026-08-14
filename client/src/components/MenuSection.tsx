@@ -22,6 +22,7 @@ import mixerArtwork from "@assets/IMG-20260804-WA0008(1)_1786720518928.jpg";
 import eiffelBg from "@assets/bg_eiffel.jpg";
 import brazilBg from "@assets/bg_brazil.jpg";
 import americanBg from "@assets/cafe_left_noflower.jpg";
+import teapotBg from "@assets/teapot_crop.jpg";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
@@ -364,7 +365,11 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.desserts)}
+            <div className="relative rounded-2xl overflow-hidden p-6"
+              style={{ backgroundImage: `url(${teapotBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+              <div className="absolute inset-0 bg-black/50 rounded-2xl" />
+              <div className="relative z-10">{renderCategoryWithSubsections(menuItems.desserts)}</div>
+            </div>
           </TabsContent>
 
           <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
