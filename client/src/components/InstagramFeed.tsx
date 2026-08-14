@@ -22,6 +22,7 @@ import imgSucuk from "@assets/sucuk_black_bowl.jpg";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 import imgTurkishTea from "@assets/Turkish_Tea_1786708566301.jpg";
 import imgTurkishTray from "@assets/Turkish_single_tray_no_rings.jpg";
+import imgWafflesNew from "@assets/tRIPLE_wAFFLES_1786709142739.jpg";
 
 const instagramPosts = [
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
@@ -34,6 +35,7 @@ const instagramPosts = [
   { id: 11, image: imgSucuk, caption: "Sucuk Yumurta — Turkish sausage with two eggs cooked in a skillet 🇹🇷🍳 #sucuk #turkishbreakfast #themixercafe" },
   { id: 12, image: imgTurkishTea, caption: "Turkish çay — served the traditional way in a tulip glass ☕🇹🇷 #turkishtea #cay #themixercafe" },
   { id: 13, image: imgTurkishTray, caption: "Turkish coffee on a silver tray — elegance in every sip ☕✨ #turkishcoffee #themixercafe" },
+  { id: 14, image: imgWafflesNew, caption: "Triple waffles loaded with strawberries, bananas & chocolate drizzle 🧇🍓 #waffles #themixercafe" },
 ];
 
 export default function InstagramFeed() {
@@ -70,7 +72,7 @@ export default function InstagramFeed() {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-5xl mx-auto"
+          className="w-full max-w-6xl mx-auto"
         >
           <CarouselContent className="-ml-4">
             {instagramPosts.map((post) => (
