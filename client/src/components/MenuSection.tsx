@@ -321,9 +321,9 @@ export default function MenuSection() {
           </div>
 
           <TabsContent value="brazilian" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            <div className="relative rounded-2xl overflow-hidden p-6">
-              <div className="absolute inset-0 rounded-2xl" style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "200%", backgroundPosition: "center", opacity: 1 }} />
-              <div className="relative z-10">{renderMenuWithPhotos(menuItems.brazilian)}</div>
+            <div className="relative overflow-hidden -mx-4 px-4 py-8">
+              <div className="absolute inset-0" style={{ backgroundImage: `url(${brazilBg})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 1, filter: "brightness(1.2) saturate(1.1)" }} />
+              <div className="relative z-10 max-w-4xl mx-auto">{renderMenuWithPhotos(menuItems.brazilian)}</div>
             </div>
           </TabsContent>
 
