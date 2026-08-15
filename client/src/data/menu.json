@@ -67,8 +67,8 @@
       { "name": "Corn Meal (Fuba) Cake", "description": "Fluffy corn meal. Gluten Free.", "price": "$4.00", "popular": false, "checkAvailability": true }
     ],
     "Cookies & Sweets": [
-      { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true },
       { "name": "Dry Baklava", "description": "Fresh pistachios with Ghee butter.", "price": "$4.00", "popular": false },
+      { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true },
       { "name": "Pinch Cookies", "description": "Fresh walnuts or pistachios or figs mixed with white eggs and sugar.", "price": "$1.75", "popular": false },
       { "name": "Apple Turn Over Croissant", "description": "Flaky pastries filled with a warm, spiced apple mixture.", "price": "$3.25", "popular": false }
     ],
