@@ -76,7 +76,7 @@
       { "name": "Blueberries Cake", "description": "Fluffy cake with fresh blueberries, yogurt and lemon juice.", "price": "$4.00", "popular": false },
       { "name": "Plain Croissant", "description": "", "price": "$3.25", "popular": false },
       { "name": "Almond Croissant", "description": "Filling is rich, with creamy almond cream.", "price": "$3.25", "popular": false },
-      { "name": "Chocolate Croissant", "description": "", "price": "$3.25", "popular": false }
+      { "name": "Chocolate Croissant", "description": "Soft, airy, and slightly chewy, with a smooth chocolate center.", "price": "$3.25", "popular": false }
     ]
   },
   "beverages": {
