@@ -73,6 +73,7 @@
     ],
     "Muffins & Croissants": [
       { "name": "Blueberries Muffin", "description": "", "price": "$3.25", "popular": false },
+      { "name": "Plain Croissant", "description": "", "price": "$3.25", "popular": false },
       { "name": "Almond Croissant", "description": "", "price": "$3.25", "popular": false },
       { "name": "Chocolate Croissant", "description": "", "price": "$3.25", "popular": false },
       { "name": "Apple Turn Over Croissant", "description": "", "price": "$3.25", "popular": false }
