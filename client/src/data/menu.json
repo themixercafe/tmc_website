@@ -64,7 +64,6 @@
       { "name": "Orange, Walnuts and Raisin", "description": "", "price": "$4.00", "popular": false },
       { "name": "Apple Cake", "description": "Fluffy cake with fresh apples with cinnamon, blended walnuts and raisin.", "price": "$4.00", "popular": false },
       { "name": "Corn Cake", "description": "Made with fresh corn, corn meal. Gluten Free.", "price": "$4.00", "popular": false },
-      { "name": "Corn Cake", "description": "", "price": "$4.00", "popular": false, "checkAvailability": true }
     ],
     "Cookies & Sweets": [
       { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true },
