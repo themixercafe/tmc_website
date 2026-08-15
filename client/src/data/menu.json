@@ -68,7 +68,7 @@
     ],
     "Cookies & Sweets": [
       { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true },
-      { "name": "Pistachio Dry Baklava", "description": "", "price": "$4.00", "popular": false },
+      { "name": "Dry Baklava", "description": "", "price": "$4.00", "popular": false },
       { "name": "Pink Cookies", "description": "Fresh walnuts or pistachios or figs mixed with white eggs and sugar.", "price": "$1.75", "popular": false }
     ],
     "Muffins & Croissants": [
