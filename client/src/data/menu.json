@@ -63,7 +63,8 @@
       { "name": "Turkish Cake", "description": "Fluffy fresh carrot cake. No milk, no oleo. Rich in walnuts.", "price": "$4.00", "popular": true },
       { "name": "Orange Cake", "description": "Fluffy cake blended with fresh orange and orange peel, raisin and walnuts.", "price": "$4.00", "popular": false },
       { "name": "Apple Cake", "description": "Fluffy cake with fresh apples with cinnamon, blended walnuts and raisin.", "price": "$4.00", "popular": false },
-      { "name": "Corn Cake", "description": "Made with fresh corn, corn meal. Gluten Free.", "price": "$4.00", "popular": false, "checkAvailability": true }
+      { "name": "Corn Cake", "description": "Made with fresh corn, corn meal. Gluten Free.", "price": "$4.00", "popular": false, "checkAvailability": true },
+      { "name": "Corn Meal (Fuba) Cake", "description": "Fluffy corn meal. Gluten Free.", "price": "$4.00", "popular": false }
     ],
     "Cookies & Sweets": [
       { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true },
