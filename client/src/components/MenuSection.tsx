@@ -139,11 +139,7 @@ const MenuItem = ({ item, transparent }: { item: MenuItem; transparent?: boolean
             </div>
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>}
           </CardHeader>
-          <CardContent className="p-0">
-            <CardDescription className="text-white leading-relaxed font-bold">
-              {item.description}
-            </CardDescription>
-          </CardContent>
+          <CardContent className="p-0"></CardContent>
         </div>
       </Card>
     </>
