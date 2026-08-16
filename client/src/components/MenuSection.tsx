@@ -275,8 +275,8 @@ export default function MenuSection() {
           backgroundSize: currentBg.size ?? "cover",
           backgroundPosition: currentBg.position ?? "center",
           filter: currentBg.filter,
-          opacity: currentBg.opacity ?? 0.3,
-          animation: "bgFadeIn 0.8s ease",
+          ['--bg-target-opacity' as string]: currentBg.opacity ?? 0.3,
+          animation: "bgFadeIn 0.8s ease forwards",
         }}
       />
       {/* Decorative background element */}
