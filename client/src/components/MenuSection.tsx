@@ -258,7 +258,7 @@ export default function MenuSection() {
     turkish:   { image: cappadociaBg, position: "center 30%" },
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     american:  { image: classicsBg, position: "center" },
-    desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.18 },
+    desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.45 },
     beverages: { image: cappadociaBg, position: "center 30%", filter: "brightness(0.8) saturate(0.9)" },
     smoothies: { image: cappadociaBg, position: "center 30%", filter: "brightness(0.8) saturate(0.9)" },
   };
@@ -275,7 +275,7 @@ export default function MenuSection() {
           backgroundSize: currentBg.size ?? "cover",
           backgroundPosition: currentBg.position ?? "center",
           filter: currentBg.filter,
-          ['--bg-target-opacity' as string]: currentBg.opacity ?? 0.3,
+          ['--bg-target-opacity' as string]: currentBg.opacity ?? 0.55,
           animation: "bgFadeIn 0.8s ease forwards",
         }}
       />
