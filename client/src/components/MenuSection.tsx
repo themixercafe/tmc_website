@@ -259,8 +259,8 @@ export default function MenuSection() {
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     american:  { image: classicsBg, position: "center" },
     desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.35 },
-    beverages: { image: cappadociaBg, position: "center 30%", filter: "brightness(0.8) saturate(0.9)" },
-    smoothies: { image: cappadociaBg, position: "center 30%", filter: "brightness(0.8) saturate(0.9)" },
+    beverages: { image: beveragesBg, position: "center", filter: "brightness(1.0) saturate(1.1)" },
+    smoothies: { image: beveragesBg, position: "center", filter: "brightness(1.0) saturate(1.1)" },
   };
   const currentBg = tabBgMap[activeTab] ?? tabBgMap.french;
 
@@ -306,43 +306,43 @@ export default function MenuSection() {
             <TabsList className="bg-transparent h-auto gap-3 flex-wrap justify-center">
               <TabsTrigger 
                 value="brazilian" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 Brazilian
               </TabsTrigger>
               <TabsTrigger 
                 value="turkish" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 Turkish
               </TabsTrigger>
               <TabsTrigger 
                 value="french" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 French
               </TabsTrigger>
               <TabsTrigger 
                 value="american" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 Cafe Classics
               </TabsTrigger>
               <TabsTrigger 
                 value="desserts" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 Pastries
               </TabsTrigger>
               <TabsTrigger 
                 value="beverages" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 Beverages
               </TabsTrigger>
               <TabsTrigger 
                 value="smoothies" 
-                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black border border-white/10 data-[state=active]:border-secondary data-[state=active]:shadow-lg transition-all"
+                className="rounded-full px-4 py-2 text-sm sm:px-6 sm:py-2.5 sm:text-base text-white/70 data-[state=active]:bg-secondary data-[state=active]:text-black data-[state=active]:shadow-lg transition-all"
               >
                 Smoothies
               </TabsTrigger>
