@@ -259,8 +259,8 @@ export default function MenuSection() {
     french:    { image: eiffelBg, filter: "brightness(2.0) saturate(0.4) hue-rotate(-40deg) contrast(0.85) grayscale(0.15)", position: "center" },
     american:  { image: classicsBg, position: "center" },
     desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.18 },
-    beverages: { image: beveragesBg, position: "center", filter: "brightness(0.9) saturate(1.1)" },
-    smoothies: { image: beveragesBg, position: "center", filter: "brightness(0.9) saturate(1.1)" },
+    beverages: { image: cappadociaBg, position: "center 30%", filter: "brightness(0.8) saturate(0.9)" },
+    smoothies: { image: cappadociaBg, position: "center 30%", filter: "brightness(0.8) saturate(0.9)" },
   };
   const currentBg = tabBgMap[activeTab] ?? tabBgMap.french;
 
