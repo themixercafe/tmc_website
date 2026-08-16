@@ -140,7 +140,7 @@ const MenuItem = ({ item, transparent }: { item: MenuItem; transparent?: boolean
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>}
           </CardHeader>
           <CardContent className="p-0">
-            <CardDescription className="text-white/80 leading-relaxed font-bold">
+            <CardDescription className="text-white leading-relaxed font-bold">
               {item.description}
             </CardDescription>
           </CardContent>
@@ -195,7 +195,7 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
             </div>
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>}
           </div>
-          <p className="text-white/80 mt-1 text-lg leading-relaxed font-bold">{item.description}</p>
+          <p className="text-white mt-1 text-lg leading-relaxed font-bold">{item.description}</p>
         </div>
         {/* Photo aligned to this item */}
         {image && (
