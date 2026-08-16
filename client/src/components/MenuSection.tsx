@@ -69,7 +69,7 @@ const imageMap: Record<string, string> = {
   // "Turkey": turkeySandImage,
 };
 
-const MenuItem = ({ item, transparent }: { item: MenuItem; transparent?: boolean }) => {
+const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
   const image = imageMap[item.name];
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
@@ -140,9 +140,11 @@ const MenuItem = ({ item, transparent }: { item: MenuItem; transparent?: boolean
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>}
           </CardHeader>
           <CardContent className="p-0">
-            <CardDescription className="text-white leading-relaxed font-bold">
-              {item.description}
-            </CardDescription>
+            {!hideDescription && (
+              <CardDescription className="text-white leading-relaxed font-bold">
+                {item.description}
+              </CardDescription>
+            )}
           </CardContent>
         </div>
       </Card>
@@ -233,7 +235,7 @@ export default function MenuSection() {
     }, 0);
   };
 
-  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean) => (
+  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean) => (
     <div className="space-y-10">
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
@@ -245,7 +247,7 @@ export default function MenuSection() {
           )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {items.map((item, idx) => (
-              <MenuItem key={idx} item={item} transparent={transparent} />
+              <MenuItem key={idx} item={item} transparent={transparent} hideDescription={hideDescriptions} />
             ))}
           </div>
         </div>
@@ -370,7 +372,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.beverages, true)}
+             {renderCategoryWithSubsections(menuItems.beverages, true, false, true)}
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
