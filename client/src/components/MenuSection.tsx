@@ -393,43 +393,43 @@ export default function MenuSection() {
             <TabsList className="!bg-transparent !shadow-none !p-0 h-auto gap-2 flex-nowrap justify-center overflow-x-auto">
               <TabsTrigger 
                 value="brazilian" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 Brazilian
               </TabsTrigger>
               <TabsTrigger 
                 value="turkish" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 Turkish
               </TabsTrigger>
               <TabsTrigger 
                 value="french" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 French
               </TabsTrigger>
               <TabsTrigger 
                 value="american" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 Cafe Classics
               </TabsTrigger>
               <TabsTrigger 
                 value="desserts" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 Pastries
               </TabsTrigger>
               <TabsTrigger 
                 value="beverages" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 Beverages
               </TabsTrigger>
               <TabsTrigger 
                 value="smoothies" 
-                className="rounded-full px-3 py-1.5 text-sm text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                className="rounded-full px-4 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
               >
                 Smoothies
               </TabsTrigger>
