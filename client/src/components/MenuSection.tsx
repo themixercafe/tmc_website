@@ -28,6 +28,9 @@ import americanBg from "@assets/cafe_left_noflower.jpg";
 import classicsBg from "@assets/classics_collage.jpg";
 import teapotBg from "@assets/teapot_full.png";
 import beveragesBg from "@assets/beverages_collage.jpg";
+import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
+import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
+import turkishTeaDrinkImage from "@assets/turkish_tea_4_1786888400190.webp";
 import turkeySandImage from "@assets/Turkey_sand_3_1786545548991.png";
 
 // Type definition for Menu Item
@@ -67,6 +70,12 @@ const imageMap: Record<string, string> = {
   // "Sucuk Yumurta": turkishSausageImage,
   // "Spinach Feta Börek": spinachBorekImage,
   // "Turkey": turkeySandImage,
+
+  // Beverages
+  "Cappuccino": cappuccinoImage,
+  "Iced Matcha Latte": matchaImage,
+  "Matcha Latte": matchaImage,
+  "Turkish Tea": turkishTeaDrinkImage,
 };
 
 const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
@@ -372,7 +381,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.beverages)}
+             {renderCategoryWithSubsections(menuItems.beverages, true)}
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
