@@ -29,6 +29,9 @@ import classicsBg from "@assets/classics_collage.jpg";
 import teapotBg from "@assets/teapot_full.png";
 import beveragesBg from "@assets/beverages_collage.jpg";
 import smoothiesBg from "@assets/smoothies_bg.jpg";
+import smoothieSunrise from "@assets/smoothie_sunrise.jpg";
+import smoothieBerry from "@assets/smoothie_berry.jpg";
+import smoothieStrawberry from "@assets/smoothie_strawberry.jpg";
 import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
 import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
 import turkishTeaDrinkImage from "@assets/turkish_tea_4_1786888400190.webp";
@@ -77,6 +80,12 @@ const imageMap: Record<string, string> = {
   "Iced Matcha Latte": matchaImage,
   "Matcha Latte": matchaImage,
   "Turkish Tea": turkishTeaDrinkImage,
+
+  // Smoothies
+  "Sunrise Tropic": smoothieSunrise,
+  "Mango Madness": smoothieSunrise,
+  "Berry Blast": smoothieBerry,
+  "Strawberry Banana": smoothieStrawberry,
 };
 
 const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
