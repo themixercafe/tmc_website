@@ -286,13 +286,20 @@ export default function MenuSection() {
                 <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
                 <div className="w-16 h-px bg-secondary/50 mx-auto" />
               </div>
-              {/* All 3 photos side by side */}
+              {/* Featured layout: yellow large on left, others stacked right */}
               <div className="grid grid-cols-3 gap-4">
-                {withPhoto.map((item, idx) => (
-                  <div key={idx} className="rounded-2xl overflow-hidden group">
-                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300" />
+                {withPhoto[0] && (
+                  <div className="col-span-2 rounded-2xl overflow-hidden group">
+                    <img src={imageMap[withPhoto[0].name]} alt={withPhoto[0].name} className="w-full h-80 object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300" />
                   </div>
-                ))}
+                )}
+                <div className="col-span-1 flex flex-col gap-4">
+                  {withPhoto.slice(1).map((item, idx) => (
+                    <div key={idx} className="rounded-2xl overflow-hidden group flex-1">
+                      <img src={imageMap[item.name]} alt={item.name} className="w-full h-[152px] object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           );
