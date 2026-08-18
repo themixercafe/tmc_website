@@ -244,6 +244,25 @@ export default function MenuSection() {
     }, 0);
   };
 
+  const renderBeveragesLayout = (categoryItems: Record<string, MenuItem[]>) => (
+    <div className="space-y-12">
+      {Object.entries(categoryItems).map(([category, items]) => (
+        <div key={category} className="text-center">
+          <h3 className="text-3xl font-serif font-bold text-secondary mb-1">{category}</h3>
+          <div className="w-24 h-px bg-secondary/50 mx-auto mb-6" />
+          <div className="flex flex-col items-center gap-2">
+            {items.map((item, idx) => (
+              <div key={idx} className="flex items-center gap-3">
+                {item.isFavorite && <span className="text-secondary text-xs">★</span>}
+                <span className="text-white font-semibold text-lg">{item.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
   const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean) => (
     <div className="space-y-10">
       {Object.entries(categoryItems).map(([category, items]) => (
@@ -381,7 +400,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.beverages, true)}
+             {renderBeveragesLayout(menuItems.beverages)}
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
