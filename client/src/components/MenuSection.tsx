@@ -31,7 +31,7 @@ import beveragesBg from "@assets/beverages_collage.jpg";
 import smoothiesBg from "@assets/smoothies_bg.jpg";
 import smoothieBerry from "@assets/mixed-berry-smoothie-2-min_1787066623486.jpg";
 import smoothieMango from "@assets/Mango-Pineapple-Smoothie-3_1787066623486.webp";
-import smoothieSunrise from "@assets/strawberry-mango-smoothie-1_1787074399873.jpg";
+import smoothieSunrise from "@assets/smoothie_sunrise_cropped.jpg";
 import smoothieStrawberry from "@assets/smoothie_strawberry_white.jpg";
 import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
 import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
