@@ -287,26 +287,14 @@ export default function MenuSection() {
                 <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
                 <div className="w-16 h-px bg-secondary/50 mx-auto" />
               </div>
-              {/* Top 2 photos side by side */}
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                {topTwo.map((item, idx) => (
+              {/* All 3 photos side by side */}
+              <div className="grid grid-cols-3 gap-4">
+                {withPhoto.map((item, idx) => (
                   <div key={idx} className="rounded-2xl overflow-hidden group">
-                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   </div>
                 ))}
               </div>
-              {/* Remaining centered */}
-              {rest.length > 0 && (
-                <div className="flex justify-center gap-4 flex-wrap">
-                  {rest.map((item, idx) => (
-                    imageMap[item.name] ? (
-                      <div key={idx} className="rounded-2xl overflow-hidden group w-64">
-                        <img src={imageMap[item.name]} alt={item.name} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
-                      </div>
-                    ) : null
-                  ))}
-                </div>
-              )}
             </div>
           );
         })}
@@ -473,7 +461,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.smoothies, true, false, true)}
+             {renderSmoothiesLayout(menuItems.smoothies)}
           </TabsContent>
         </Tabs>
 
