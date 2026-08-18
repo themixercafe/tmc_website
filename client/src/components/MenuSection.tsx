@@ -292,7 +292,7 @@ export default function MenuSection() {
               <div className="grid grid-cols-4 gap-4">
                 {withPhoto.map((item, idx) => (
                   <div key={idx} className="rounded-2xl overflow-hidden group">
-                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300" />
+                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-contain group-hover:scale-105 transition-transform duration-300" />
                   </div>
                 ))}
               </div>
