@@ -84,7 +84,6 @@ const imageMap: Record<string, string> = {
 
   // Smoothies
   "Sunrise Tropic": smoothieMango,
-  "Mango Madness": smoothieMango,
   "Berry Blast": smoothieBerry,
   "Strawberry Banana": smoothieStrawberry,
 };
