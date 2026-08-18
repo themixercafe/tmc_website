@@ -29,9 +29,9 @@ import classicsBg from "@assets/classics_collage.jpg";
 import teapotBg from "@assets/teapot_full.png";
 import beveragesBg from "@assets/beverages_collage.jpg";
 import smoothiesBg from "@assets/smoothies_bg.jpg";
-import smoothieSunrise from "@assets/smoothie_sunrise.jpg";
-import smoothieBerry from "@assets/smoothie_berry.jpg";
-import smoothieStrawberry from "@assets/smoothie_strawberry.jpg";
+import smoothieBerry from "@assets/mixed-berry-smoothie-2-min_1787066623486.jpg";
+import smoothieMango from "@assets/Mango-Pineapple-Smoothie-3_1787066623486.webp";
+import smoothieStrawberry from "@assets/strawberry-mango-smoothie-1_1787066623486.jpg";
 import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
 import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
 import turkishTeaDrinkImage from "@assets/turkish_tea_4_1786888400190.webp";
@@ -82,8 +82,8 @@ const imageMap: Record<string, string> = {
   "Turkish Tea": turkishTeaDrinkImage,
 
   // Smoothies
-  "Sunrise Tropic": smoothieSunrise,
-  "Mango Madness": smoothieSunrise,
+  "Sunrise Tropic": smoothieMango,
+  "Mango Madness": smoothieMango,
   "Berry Blast": smoothieBerry,
   "Strawberry Banana": smoothieStrawberry,
 };
@@ -322,7 +322,6 @@ export default function MenuSection() {
           <div className="flex flex-col items-center gap-2">
             {items.map((item, idx) => (
               <div key={idx} className="flex items-center gap-3">
-                {item.isFavorite && <span className="text-secondary text-xs">★</span>}
                 <span className="text-white font-semibold text-lg">{item.name}</span>
               </div>
             ))}
