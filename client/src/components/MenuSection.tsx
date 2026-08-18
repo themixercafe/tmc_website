@@ -87,7 +87,6 @@ const imageMap: Record<string, string> = {
   "Sunrise Tropic": smoothieSunrise,
   "Mango Madness": smoothieMango,
   "Berry Blast": smoothieBerry,
-  "Strawberry Banana": smoothieStrawberry,
 };
 
 const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
@@ -288,8 +287,8 @@ export default function MenuSection() {
                 <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
                 <div className="w-16 h-px bg-secondary/50 mx-auto" />
               </div>
-              {/* All 4 photos side by side */}
-              <div className="grid grid-cols-4 gap-4">
+              {/* All 3 photos side by side */}
+              <div className="grid grid-cols-3 gap-4">
                 {withPhoto.map((item, idx) => (
                   <div key={idx} className="rounded-2xl overflow-hidden group">
                     <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-bottom group-hover:scale-105 transition-transform duration-300" />
