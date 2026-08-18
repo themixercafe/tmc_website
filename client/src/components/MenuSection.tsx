@@ -31,7 +31,7 @@ import beveragesBg from "@assets/beverages_collage.jpg";
 import smoothiesBg from "@assets/smoothies_bg.jpg";
 import smoothieBerry from "@assets/mixed-berry-smoothie-2-min_1787066623486.jpg";
 import smoothieMango from "@assets/Mango-Pineapple-Smoothie-3_1787066623486.webp";
-import smoothieStrawberry from "@assets/strawberry-mango-smoothie-1_1787066623486.jpg";
+import smoothieStrawberry from "@assets/pngtree-classic-strawberry-banana-smoothie-png-image_14890287_1787074287747.png";
 import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
 import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
 import turkishTeaDrinkImage from "@assets/turkish_tea_4_1786888400190.webp";
@@ -84,6 +84,7 @@ const imageMap: Record<string, string> = {
 
   // Smoothies
   "Sunrise Tropic": smoothieMango,
+  "Mango Madness": smoothieMango,
   "Berry Blast": smoothieBerry,
   "Strawberry Banana": smoothieStrawberry,
 };
@@ -286,8 +287,8 @@ export default function MenuSection() {
                 <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
                 <div className="w-16 h-px bg-secondary/50 mx-auto" />
               </div>
-              {/* All 3 photos side by side */}
-              <div className="grid grid-cols-3 gap-4">
+              {/* All 4 photos side by side */}
+              <div className="grid grid-cols-4 gap-4">
                 {withPhoto.map((item, idx) => (
                   <div key={idx} className="rounded-2xl overflow-hidden group">
                     <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300" />
