@@ -289,10 +289,10 @@ export default function MenuSection() {
                 <div className="w-16 h-px bg-secondary/50 mx-auto" />
               </div>
               {/* All 4 photos side by side */}
-              <div className="grid grid-cols-4 gap-4 items-end">
+              <div className="grid grid-cols-4 gap-4">
                 {withPhoto.map((item, idx) => (
                   <div key={idx} className="rounded-2xl overflow-hidden group">
-                    <img src={imageMap[item.name]} alt={item.name} className={`w-full object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300 ${idx === 1 ? "h-96" : "h-80"}`} />
+                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300" />
                   </div>
                 ))}
               </div>
