@@ -135,7 +135,7 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
         <div className="p-4">
           <CardHeader className="flex flex-row items-baseline justify-between p-0 pb-2">
             <div className="flex items-center gap-2 flex-wrap">
-              <CardTitle className="text-lg font-serif font-bold transition-colors" style={{ color: item.nameColor ?? 'var(--secondary)' }}>
+              <CardTitle className={`text-lg font-serif font-bold transition-colors ${!item.nameColor ? 'text-secondary' : ''}`} style={item.nameColor ? { color: item.nameColor } : {}}>
                 {item.name}
               </CardTitle>
               {item.popular && (
@@ -320,15 +320,22 @@ export default function MenuSection() {
     </div>
   );
 
-  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean) => (
+  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean, centerHeaders?: boolean) => (
     <div className="space-y-10">
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
           {!hideHeaders && (
+            centerHeaders ? (
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
+                <div className="w-16 h-px bg-secondary/50 mx-auto" />
+              </div>
+            ) : (
             <div className="flex items-center gap-4 mb-6">
               <h3 className="text-2xl font-serif font-bold text-secondary">{category}</h3>
               <div className="h-px bg-white/20 flex-1" />
             </div>
+            )
           )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {items.map((item, idx) => (
@@ -449,7 +456,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="american" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderCategoryWithSubsections(menuItems.american, true)}
+            {renderCategoryWithSubsections(menuItems.american, true, false, false, true)}
           </TabsContent>
 
           <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
