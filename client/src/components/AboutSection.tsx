@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import aboutImage from "@assets/IMG-20260412-WA0054_1787076966829.jpg";
-import partnerImage from "@assets/IMG-20260412-WA0047_1787077132285.jpg";
+import aboutImage from "@assets/Screenshot_20260101_133005_Instagram_1767292485525.jpg";
 
 export default function AboutSection() {
   return (
@@ -9,17 +8,13 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
-            <div className="grid grid-cols-2 gap-4">
-              {[{ src: aboutImage, name: "Regina" }, { src: partnerImage, name: "Ayşe" }].map(({ src, name }) => (
-                <div key={name} className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img src={src} alt={name} className="w-full object-cover object-[center_20%] aspect-[3/4]" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-0 right-0 text-center">
-                    <p className="text-secondary font-serif font-bold text-lg tracking-wide">{name}</p>
-                    <p className="text-white/80 text-xs font-bold tracking-widest uppercase mt-0.5">Co-Founder</p>
-                  </div>
-                </div>
-              ))}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500">
+              <img
+                src={aboutImage}
+                alt="The owners of The Mixer Cafe"
+                className="w-full h-auto object-cover object-top aspect-[4/3]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent mix-blend-multiply" />
             </div>
             <div className="absolute -top-6 -left-6 w-full h-full border-2 border-secondary/30 rounded-2xl -z-10 hidden md:block" />
             <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-primary/10 rounded-2xl -z-10 hidden md:block" />
