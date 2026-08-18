@@ -254,6 +254,65 @@ export default function MenuSection() {
     }, 0);
   };
 
+  const renderSmoothiesLayout = (categoryItems: Record<string, MenuItem[]>) => {
+    const sections = Object.entries(categoryItems);
+    return (
+      <div className="space-y-10">
+        {sections.map(([category, items]) => {
+          const withPhoto = items.filter(i => imageMap[i.name]);
+          const withoutPhoto = items.filter(i => !imageMap[i.name]);
+          const isAddons = withPhoto.length === 0;
+
+          if (isAddons) {
+            return (
+              <div key={category} className="text-center">
+                <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
+                <div className="w-16 h-px bg-secondary/50 mx-auto mb-4" />
+                <div className="flex flex-col items-center gap-2">
+                  {items.map((item, idx) => (
+                    <span key={idx} className="text-white font-semibold text-base">{item.name}</span>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+
+          const topTwo = withPhoto.slice(0, 2);
+          const rest = [...withPhoto.slice(2), ...withoutPhoto];
+
+          return (
+            <div key={category}>
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
+                <div className="w-16 h-px bg-secondary/50 mx-auto" />
+              </div>
+              {/* Top 2 photos side by side */}
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                {topTwo.map((item, idx) => (
+                  <div key={idx} className="rounded-2xl overflow-hidden group">
+                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  </div>
+                ))}
+              </div>
+              {/* Remaining centered */}
+              {rest.length > 0 && (
+                <div className="flex justify-center gap-4 flex-wrap">
+                  {rest.map((item, idx) => (
+                    imageMap[item.name] ? (
+                      <div key={idx} className="rounded-2xl overflow-hidden group w-64">
+                        <img src={imageMap[item.name]} alt={item.name} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                      </div>
+                    ) : null
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
   const renderBeveragesLayout = (categoryItems: Record<string, MenuItem[]>) => (
     <div className="space-y-12">
       {Object.entries(categoryItems).map(([category, items]) => (
@@ -414,7 +473,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.smoothies, true, false, true)}
+             {renderSmoothiesLayout(menuItems.smoothies)}
           </TabsContent>
         </Tabs>
 
