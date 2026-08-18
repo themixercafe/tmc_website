@@ -405,7 +405,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.smoothies, true)}
+             {renderCategoryWithSubsections(menuItems.smoothies, true, false, true)}
           </TabsContent>
         </Tabs>
 
