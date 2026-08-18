@@ -443,33 +443,29 @@ export default function MenuSection() {
             </TabsList>
           </div>
 
-          <TabsContent value="brazilian" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.brazilian)}
-          </TabsContent>
-
-          <TabsContent value="turkish" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.turkish)}
-          </TabsContent>
-
-          <TabsContent value="french" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderMenuWithPhotos(menuItems.french)}
-          </TabsContent>
-
-          <TabsContent value="american" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderCategoryWithSubsections(menuItems.american, true, false, false, true)}
-          </TabsContent>
-
-          <TabsContent value="desserts" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-            {renderCategoryWithSubsections(menuItems.desserts, true, true)}
-          </TabsContent>
-
-          <TabsContent value="beverages" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderBeveragesLayout(menuItems.beverages)}
-          </TabsContent>
-
-          <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderSmoothiesLayout(menuItems.smoothies)}
-          </TabsContent>
+          {[
+            { value: "brazilian", content: renderMenuWithPhotos(menuItems.brazilian) },
+            { value: "turkish", content: renderMenuWithPhotos(menuItems.turkish) },
+            { value: "french", content: renderMenuWithPhotos(menuItems.french) },
+            { value: "american", content: renderCategoryWithSubsections(menuItems.american, true, false, false, true) },
+            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, true) },
+            { value: "beverages", content: renderBeveragesLayout(menuItems.beverages) },
+            { value: "smoothies", content: renderSmoothiesLayout(menuItems.smoothies) },
+          ].map(({ value, content }) => (
+            <TabsContent key={value} value={value} className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
+              {content}
+              <div className="text-center mt-10">
+                <a
+                  href="https://www.clover.com/online-ordering/the-mixer-cafe-boynton-beach"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-secondary text-black font-bold px-8 py-3 rounded-full text-lg hover:bg-secondary/80 transition-colors shadow-lg"
+                >
+                  🛒 Order Online
+                </a>
+              </div>
+            </TabsContent>
+          ))}
         </Tabs>
 
         <div className="text-center mt-12 max-w-3xl mx-auto">
