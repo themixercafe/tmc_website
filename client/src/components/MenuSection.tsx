@@ -146,7 +146,7 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
               {item.checkAvailability && (
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-orange-600 bg-orange-50 hover:bg-orange-100 cursor-help flex items-center gap-1">
+                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-white bg-orange-500 hover:bg-orange-600 cursor-help flex items-center gap-1 font-bold">
                       <AlertCircle className="w-3 h-3" />
                       Check Availability
                     </Badge>
