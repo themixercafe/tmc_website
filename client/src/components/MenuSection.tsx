@@ -197,14 +197,14 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-secondary font-bold text-lg font-serif">{item.name}</span>
               {item.popular && (
-                <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary/20 text-secondary-foreground">
-                  Favorite
+                <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary text-black font-bold hover:bg-secondary/80">
+                  ★ Favorite
                 </Badge>
               )}
               {item.checkAvailability && (
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-orange-400 bg-orange-500/10 hover:bg-orange-500/20 cursor-help flex items-center gap-1">
+                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-white bg-orange-500 hover:bg-orange-600 cursor-help flex items-center gap-1 font-bold">
                       <AlertCircle className="w-3 h-3" />
                       Check Availability
                     </Badge>
