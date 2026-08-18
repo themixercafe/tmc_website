@@ -139,8 +139,8 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
                 {item.name}
               </CardTitle>
               {item.popular && (
-                <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary/20 text-secondary-foreground hover:bg-secondary/30">
-                  Favorite
+                <Badge variant="secondary" className="text-[10px] h-5 px-1.5 bg-secondary text-black font-bold hover:bg-secondary/80">
+                  ★ Favorite
                 </Badge>
               )}
               {item.checkAvailability && (
