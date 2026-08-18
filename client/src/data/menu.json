@@ -112,10 +112,10 @@
   },
   "smoothies": {
     "Smoothies": [
-      { "name": "Sunrise Tropic", "description": "Strawberry, mango, banana, pineapple. Regular milk or yogurt.", "price": "$7.99", "popular": true },
+      { "name": "Sunrise Tropic", "description": "Strawberry, mango, banana, pineapple. Regular milk or yogurt.", "price": "$7.99", "popular": true, "nameColor": "#FF8C00" },
       { "name": "Mango Madness", "description": "Mango and pineapple. Regular milk or yogurt.", "price": "$7.99", "popular": false },
       { "name": "Berry Blast", "description": "Strawberry, blueberry, banana, blackberry. Regular milk or yogurt.", "price": "$7.99", "popular": true },
-      { "name": "Strawberry Banana", "description": "Strawberry and banana. Regular milk or yogurt.", "price": "$7.99", "popular": false }
+      { "name": "Strawberry Banana", "description": "Strawberry and banana. Regular milk or yogurt.", "price": "$7.99", "popular": false, "nameColor": "#FFB6C1" }
     ],
     "Smoothie Add-ons": [
       { "name": "Vegan Milk", "description": "Almond or Oat", "price": "$1.00", "popular": false },

@@ -44,6 +44,7 @@ type MenuItem = {
   price: string;
   popular: boolean;
   checkAvailability?: boolean;
+  nameColor?: string;
 };
 
 // Type definition for Menu Data
@@ -125,7 +126,7 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
             <img
               src={image}
               alt={item.name}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         )}
@@ -134,7 +135,7 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
         <div className="p-4">
           <CardHeader className="flex flex-row items-baseline justify-between p-0 pb-2">
             <div className="flex items-center gap-2 flex-wrap">
-              <CardTitle className="text-lg font-serif font-bold text-secondary group-hover:text-secondary/80 transition-colors">
+              <CardTitle className="text-lg font-serif font-bold transition-colors" style={{ color: item.nameColor ?? 'var(--secondary)' }}>
                 {item.name}
               </CardTitle>
               {item.popular && (
