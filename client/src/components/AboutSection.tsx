@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import aboutImage from "@assets/Screenshot_20260101_133005_Instagram_1767292485525.jpg";
+import aboutImage from "@assets/IMG-20260412-WA0054_1787076966829.jpg";
 
 export default function AboutSection() {
   return (
