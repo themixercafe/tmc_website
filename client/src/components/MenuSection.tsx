@@ -28,6 +28,7 @@ import americanBg from "@assets/cafe_left_noflower.jpg";
 import classicsBg from "@assets/classics_collage.jpg";
 import teapotBg from "@assets/teapot_full.png";
 import beveragesBg from "@assets/beverages_collage.jpg";
+import smoothiesBg from "@assets/smoothies_bg.jpg";
 import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
 import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
 import turkishTeaDrinkImage from "@assets/turkish_tea_4_1786888400190.webp";
@@ -290,7 +291,7 @@ export default function MenuSection() {
     american:  { image: classicsBg, position: "center" },
     desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.35 },
     beverages: { image: beveragesBg, position: "center" },
-    smoothies: { image: cappadociaBg, position: "center 30%" },
+    smoothies: { image: smoothiesBg, position: "center", filter: "brightness(0.85) saturate(1.1)" },
   };
   const currentBg = tabBgMap[activeTab] ?? tabBgMap.french;
 
@@ -404,7 +405,7 @@ export default function MenuSection() {
           </TabsContent>
 
           <TabsContent value="smoothies" className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
-             {renderCategoryWithSubsections(menuItems.smoothies)}
+             {renderCategoryWithSubsections(menuItems.smoothies, true)}
           </TabsContent>
         </Tabs>
 
