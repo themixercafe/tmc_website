@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import MenuSection from "@/components/MenuSection";
 import AboutSection from "@/components/AboutSection";
 import InstagramFeed from "@/components/InstagramFeed";
+import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
         <MenuSection />
         <InstagramFeed />
+        <LocationSection />
       </main>
       <Footer />
     </div>

@@ -50,7 +50,7 @@ export default function Navigation() {
             Our Story
           </a>
           <a 
-            href="#contact"
+            href="#visit"
             className={`transition-colors font-medium ${
               isScrolled 
                 ? "text-foreground/80 hover:text-primary" 
@@ -111,7 +111,7 @@ export default function Navigation() {
             Our Story
           </a>
           <a 
-            href="#contact"
+            href="#visit"
             className="text-lg font-medium text-white/80 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
