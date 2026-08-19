@@ -418,7 +418,7 @@ export default function MenuSection() {
 
             {/* Scrollable tabs */}
             <div ref={tabScrollRef} className="overflow-x-auto scrollbar-hide flex justify-start">
-              <TabsList className="!bg-transparent !shadow-none !p-0 pr-8 h-auto gap-2 flex-nowrap inline-flex">
+              <TabsList className="!bg-transparent !shadow-none !p-0 pr-12 h-auto gap-1 flex-nowrap inline-flex min-w-max">
                 {[
                   { value: "brazilian", label: "Brazilian" },
                   { value: "turkish", label: "Turkish" },
@@ -431,7 +431,7 @@ export default function MenuSection() {
                   <TabsTrigger
                     key={value}
                     value={value}
-                    className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                    className="rounded-full px-3 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap overflow-visible"
                   >
                     {label}
                   </TabsTrigger>
