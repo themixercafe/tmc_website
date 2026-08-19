@@ -408,7 +408,7 @@ export default function MenuSection() {
           onValueChange={handleTabChange}
           value={activeTab}
         >
-          <div className="relative mb-10 px-8">
+          <div className="relative mb-10 px-5">
             {/* Left arrow */}
             <button
               onClick={() => { const el = tabScrollRef.current; if (el) el.scrollBy({ left: -150, behavior: 'smooth' }); }}
