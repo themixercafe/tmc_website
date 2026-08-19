@@ -18,7 +18,7 @@ export default function LocationSection() {
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-80 lg:h-full min-h-[320px]">
             <iframe
               title="The Mixer Cafe location"
-              src="https://maps.google.com/maps?q=312+N+Federal+Hwy,+Boynton+Beach,+FL+33435&output=embed&z=15"
+              src="https://maps.google.com/maps?width=100%25&height=400&hl=en&q=312+N+Federal+Hwy%2C+Boynton+Beach%2C+FL+33435&t=&z=15&ie=UTF8&iwloc=B&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 320 }}
