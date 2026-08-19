@@ -408,17 +408,17 @@ export default function MenuSection() {
           onValueChange={handleTabChange}
           value={activeTab}
         >
-          <div className="relative mb-10 px-5">
+          <div className="mb-10 flex items-center justify-center gap-2">
             {/* Left arrow */}
             <button
               onClick={() => { const el = tabScrollRef.current; if (el) el.scrollBy({ left: -150, behavior: 'smooth' }); }}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-secondary bg-black/40 hover:bg-black/60 rounded-full w-7 h-7 flex items-center justify-center shadow transition-all"
+              className="flex-shrink-0 text-secondary bg-black/40 hover:bg-black/60 rounded-full w-7 h-7 flex items-center justify-center shadow transition-all"
               aria-label="Scroll left"
             >‹</button>
 
             {/* Scrollable tabs */}
-            <div ref={tabScrollRef} className="overflow-x-auto scrollbar-hide flex justify-start">
-              <TabsList className="!bg-transparent !shadow-none !p-0 pr-12 h-auto gap-1 flex-nowrap inline-flex min-w-max">
+            <div ref={tabScrollRef} className="overflow-x-auto scrollbar-hide max-w-full">
+              <TabsList className="!bg-transparent !shadow-none !p-0 h-auto gap-1 flex-nowrap inline-flex min-w-max">
                 {[
                   { value: "brazilian", label: "Brazilian" },
                   { value: "turkish", label: "Turkish" },
@@ -442,7 +442,7 @@ export default function MenuSection() {
             {/* Right arrow */}
             <button
               onClick={() => { const el = tabScrollRef.current; if (el) el.scrollBy({ left: 150, behavior: 'smooth' }); }}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-secondary bg-black/40 hover:bg-black/60 rounded-full w-7 h-7 flex items-center justify-center shadow transition-all"
+              className="flex-shrink-0 text-secondary bg-black/40 hover:bg-black/60 rounded-full w-7 h-7 flex items-center justify-center shadow transition-all"
               aria-label="Scroll right"
             >›</button>
           </div>
