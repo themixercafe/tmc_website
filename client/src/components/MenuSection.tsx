@@ -461,16 +461,6 @@ export default function MenuSection() {
           ].map(({ value, content }) => (
             <TabsContent key={value} value={value} className="mt-0 animate-in fade-in slide-in-from-bottom-5 duration-500">
               {content}
-              <div className="text-center mt-10">
-                <a
-                  href="https://www.clover.com/online-ordering/the-mixer-cafe-boynton-beach"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-secondary text-black font-bold px-8 py-3 rounded-full text-lg hover:bg-secondary/80 transition-colors shadow-lg"
-                >
-                  🛒 Order Online
-                </a>
-              </div>
             </TabsContent>
           ))}
         </Tabs>
