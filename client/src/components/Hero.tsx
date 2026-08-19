@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
         <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-sm font-medium tracking-wider uppercase mb-6 text-secondary">
+          <span className="inline-block px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-xl font-medium tracking-wider uppercase mb-6 text-secondary">
             Boynton Beach, FL
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-lg">
