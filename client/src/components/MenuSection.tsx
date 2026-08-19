@@ -87,6 +87,7 @@ const imageMap: Record<string, string> = {
   "Sunrise Tropic": smoothieSunrise,
   "Mango Madness": smoothieMango,
   "Berry Blast": smoothieBerry,
+  "Strawberry Banana": smoothieStrawberry,
 };
 
 const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
@@ -287,11 +288,14 @@ export default function MenuSection() {
                 <h3 className="text-2xl font-serif font-bold text-secondary mb-1">{category}</h3>
                 <div className="w-16 h-px bg-secondary/50 mx-auto" />
               </div>
-              {/* All 3 photos side by side */}
-              <div className="grid grid-cols-3 gap-4">
+              {/* All smoothie photos side by side with names */}
+              <div className="grid grid-cols-4 gap-4">
                 {withPhoto.map((item, idx) => (
-                  <div key={idx} className="rounded-2xl overflow-hidden group">
-                    <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-bottom group-hover:scale-105 transition-transform duration-300" />
+                  <div key={idx} className="flex flex-col items-center gap-2">
+                    <div className="rounded-2xl overflow-hidden group w-full">
+                      <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-bottom group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <p className="text-secondary font-serif font-bold text-center text-base">{item.name}</p>
                   </div>
                 ))}
               </div>
