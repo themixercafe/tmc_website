@@ -5,7 +5,7 @@ import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[90vh] min-h-[600px] flex items-start justify-center overflow-hidden pt-24">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -13,18 +13,16 @@ export default function Hero() {
           alt="Table spread with Brazilian, Turkish and French food"
           className="w-full h-full object-cover object-center"
         />
-        {/* Fog layer over tables/chairs (top 65%) */}
-        <div className="absolute inset-x-0 top-0 h-[65%]" style={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', background: 'rgba(255,255,255,0.08)' }} />
-        {/* Gentle fade at transition point */}
-        <div className="absolute inset-x-0 top-[55%] h-[20%] bg-gradient-to-b from-transparent to-transparent" style={{ backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)' }} />
+        {/* Soft fog over background — light enough to see the evil eye */}
+        <div className="absolute inset-x-0 top-0 h-[60%]" style={{ backdropFilter: 'blur(5px)', WebkitBackdropFilter: 'blur(5px)', background: 'rgba(255,255,255,0.04)' }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/40" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
         <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-xl font-medium tracking-wider uppercase mb-6 text-secondary">
-            Boynton Beach, FL
+          <span className="inline-block px-6 py-2 rounded-full border-2 border-secondary bg-black/40 backdrop-blur-sm text-2xl font-bold tracking-widest uppercase mb-6 text-secondary shadow-lg">
+            📍 Boynton Beach, FL
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-lg">
             Where Cultures Meet <br />
