@@ -5,7 +5,7 @@ import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
