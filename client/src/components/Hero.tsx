@@ -26,7 +26,7 @@ export default function Hero() {
             Where Cultures Meet <br />
             <span className="text-secondary italic">& Flavors Blend</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed px-4 font-bold">
+          <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed px-4 font-bold">
             Experience the warmth of Brazil, the delight of Turkey, and the elegance of France. 
             A culinary journey curated by two mothers, made with love for our community.
           </p>
