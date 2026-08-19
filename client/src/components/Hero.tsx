@@ -13,7 +13,7 @@ export default function Hero() {
           alt="Table spread with Brazilian, Turkish and French food"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/40" />
       </div>
 
       {/* Content */}
