@@ -418,7 +418,7 @@ export default function MenuSection() {
 
             {/* Scrollable tabs */}
             <div ref={tabScrollRef} className="overflow-x-auto scrollbar-hide flex justify-start">
-              <TabsList className="!bg-transparent !shadow-none !p-0 h-auto gap-2 flex-nowrap inline-flex">
+              <TabsList className="!bg-transparent !shadow-none !p-0 pr-8 h-auto gap-2 flex-nowrap inline-flex">
                 {[
                   { value: "brazilian", label: "Brazilian" },
                   { value: "turkish", label: "Turkish" },
