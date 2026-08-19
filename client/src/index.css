@@ -58,6 +58,9 @@
   --radius: 0.5rem;
 }
 
+.scrollbar-hide { scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
 @layer base {
   * {
     @apply border-border;

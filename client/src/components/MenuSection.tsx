@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // Toggle to show/hide prices across the entire menu
 const SHOW_PRICES = false;
@@ -242,6 +242,7 @@ const renderMenuWithPhotos = (items: MenuItem[]) => (
 
 export default function MenuSection() {
   const [activeTab, setActiveTab] = useState("brazilian");
+  const tabScrollRef = useRef<HTMLDivElement>(null);
 
   const handleTabChange = (value: string) => {
     setActiveTab(value);
@@ -407,51 +408,43 @@ export default function MenuSection() {
           onValueChange={handleTabChange}
           value={activeTab}
         >
-          <div className="flex justify-center mb-10 pb-2 px-2">
-            <TabsList className="!bg-transparent !shadow-none !p-0 h-auto gap-2 flex-nowrap justify-center overflow-x-auto">
-              <TabsTrigger 
-                value="brazilian" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                Brazilian
-              </TabsTrigger>
-              <TabsTrigger 
-                value="turkish" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                Turkish
-              </TabsTrigger>
-              <TabsTrigger 
-                value="french" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                French
-              </TabsTrigger>
-              <TabsTrigger 
-                value="american" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                Cafe Classics
-              </TabsTrigger>
-              <TabsTrigger 
-                value="desserts" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                Pastries
-              </TabsTrigger>
-              <TabsTrigger 
-                value="beverages" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                Beverages
-              </TabsTrigger>
-              <TabsTrigger 
-                value="smoothies" 
-                className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
-              >
-                Smoothies
-              </TabsTrigger>
-            </TabsList>
+          <div className="relative mb-10 px-8">
+            {/* Left arrow */}
+            <button
+              onClick={() => { const el = tabScrollRef.current; if (el) el.scrollBy({ left: -150, behavior: 'smooth' }); }}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-secondary bg-black/40 hover:bg-black/60 rounded-full w-7 h-7 flex items-center justify-center shadow transition-all"
+              aria-label="Scroll left"
+            >‹</button>
+
+            {/* Scrollable tabs */}
+            <div ref={tabScrollRef} className="overflow-x-auto scrollbar-hide flex justify-start">
+              <TabsList className="!bg-transparent !shadow-none !p-0 h-auto gap-2 flex-nowrap inline-flex">
+                {[
+                  { value: "brazilian", label: "Brazilian" },
+                  { value: "turkish", label: "Turkish" },
+                  { value: "french", label: "French" },
+                  { value: "american", label: "Cafe Classics" },
+                  { value: "desserts", label: "Pastries" },
+                  { value: "beverages", label: "Beverages" },
+                  { value: "smoothies", label: "Smoothies" },
+                ].map(({ value, label }) => (
+                  <TabsTrigger
+                    key={value}
+                    value={value}
+                    className="rounded-full px-4 py-2 text-lg text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap"
+                  >
+                    {label}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
+
+            {/* Right arrow */}
+            <button
+              onClick={() => { const el = tabScrollRef.current; if (el) el.scrollBy({ left: 150, behavior: 'smooth' }); }}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-secondary bg-black/40 hover:bg-black/60 rounded-full w-7 h-7 flex items-center justify-center shadow transition-all"
+              aria-label="Scroll right"
+            >›</button>
           </div>
 
           {[
