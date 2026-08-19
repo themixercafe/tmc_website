@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@assets/IMG_8811_1786632258425.jpg";
+import heroImage from "@assets/hero_portrait.jpg";
 import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
   return (
-    <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
           alt="Table spread with Brazilian, Turkish and French food"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/40" />
       </div>
