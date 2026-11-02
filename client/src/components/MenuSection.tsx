@@ -90,6 +90,20 @@ const imageMap: Record<string, string> = {
   "Strawberry Banana": smoothieStrawberry,
 };
 
+const AvailabilityBadge = () => (
+  <Popover>
+    <PopoverTrigger asChild>
+      <button type="button" className="inline-flex shrink-0 items-center gap-1 rounded-full border border-orange-400 bg-orange-500 px-2 py-0.5 text-[10px] font-bold text-white hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400">
+        <AlertCircle className="w-3 h-3" />
+        Check Availability
+      </button>
+    </PopoverTrigger>
+    <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
+      <p>Please contact the store for availability.</p>
+    </PopoverContent>
+  </Popover>
+);
+
 const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
   const image = imageMap[item.name];
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -144,19 +158,7 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
                   ★ Favorite
                 </Badge>
               )}
-              {item.checkAvailability && (
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-white bg-orange-500 hover:bg-orange-600 cursor-help flex items-center gap-1 font-bold">
-                      <AlertCircle className="w-3 h-3" />
-                      Check Availability
-                    </Badge>
-                  </PopoverTrigger>
-                  <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
-                    <p>Please contact the store for availability.</p>
-                  </PopoverContent>
-                </Popover>
-              )}
+              <AvailabilityBadge />
             </div>
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>}
           </CardHeader>
@@ -202,19 +204,7 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
                   ★ Favorite
                 </Badge>
               )}
-              {item.checkAvailability && (
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Badge variant="outline" className="text-[10px] h-5 px-1.5 border-orange-400 text-white bg-orange-500 hover:bg-orange-600 cursor-help flex items-center gap-1 font-bold">
-                      <AlertCircle className="w-3 h-3" />
-                      Check Availability
-                    </Badge>
-                  </PopoverTrigger>
-                  <PopoverContent className="bg-primary text-primary-foreground border-none w-auto p-2 text-sm">
-                    <p>Please contact the store for availability.</p>
-                  </PopoverContent>
-                </Popover>
-              )}
+              <AvailabilityBadge />
             </div>
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>}
           </div>
@@ -273,7 +263,10 @@ export default function MenuSection() {
                 <div className="w-16 h-px bg-secondary/50 mx-auto mb-4" />
                 <div className="flex flex-col items-center gap-2">
                   {items.map((item, idx) => (
-                    <span key={idx} className="text-white font-semibold text-base">{item.name}</span>
+                    <div key={idx} className="flex flex-wrap items-center justify-center gap-2">
+                      <span className="text-white font-semibold text-base">{item.name}</span>
+                      <AvailabilityBadge />
+                    </div>
                   ))}
                 </div>
               </div>
@@ -297,6 +290,7 @@ export default function MenuSection() {
                       <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-bottom group-hover:scale-105 transition-transform duration-300" />
                     </div>
                     <p className="text-secondary font-serif font-bold text-center text-base">{item.name}</p>
+                    <AvailabilityBadge />
                   </div>
                 ))}
               </div>
@@ -315,8 +309,9 @@ export default function MenuSection() {
           <div className="w-24 h-px bg-secondary/50 mx-auto mb-6" />
           <div className="flex flex-col items-center gap-2">
             {items.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3">
+              <div key={idx} className="flex flex-wrap justify-center items-center gap-3">
                 <span className="text-white font-semibold text-lg">{item.name}</span>
+                <AvailabilityBadge />
               </div>
             ))}
           </div>
