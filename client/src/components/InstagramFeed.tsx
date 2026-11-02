@@ -11,7 +11,6 @@ import {
 // Cafe Photos
 import imgBaklava from "@assets/Baklava_UberEats_2880x2304_1786544856975.jpg";
 import imgMenemen from "@assets/Mdnemen_1786637802919.png";
-import imgWaffles from "@assets/tRIPLE_wAFFLES_1786544970112.jpg";
 import imgBenedict from "@assets/eggbenedict_1786637834011.png";
 import imgTurkishSausage from "@assets/Turkish_Sausage_1786545424470.jpg";
 import imgTurkey from "@assets/Turkey_sand_3_1786545548991.png";
@@ -22,7 +21,7 @@ import imgSucuk from "@assets/sucuk_black_bowl.jpg";
 import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 import imgTurkishTea from "@assets/Turkish_Tea_1786708566301.jpg";
 import imgTurkishTray from "@assets/Turkish_single_tray_clean.jpg";
-import imgWafflesNew from "@assets/tRIPLE_wAFFLES_straight.jpg";
+import imgWafflesNew from "@assets/banana_waffles_1793631513937.png";
 import imgTurkishSausageSand from "@assets/Turkish_sausage_sand._1786717907268.png";
 
 const instagramPosts = [
@@ -36,7 +35,7 @@ const instagramPosts = [
   { id: 11, image: imgSucuk, caption: "Sucuk Yumurta — Turkish sausage with two eggs cooked in a skillet 🇹🇷🍳 #sucuk #turkishbreakfast #themixercafe" },
   { id: 12, image: imgTurkishTea, caption: "Turkish çay — served the traditional way in a tulip glass ☕🇹🇷 #turkishtea #cay #themixercafe" },
   { id: 13, image: imgTurkishTray, caption: "Turkish coffee on a silver tray — elegance in every sip ☕✨ #turkishcoffee #themixercafe" },
-  { id: 14, image: imgWafflesNew, caption: "Triple waffles loaded with strawberries, bananas & chocolate drizzle 🧇🍓 #waffles #themixercafe", objectPosition: "center 70%" },
+  { id: 14, image: imgWafflesNew, caption: "Banana waffles with Nutella drizzle #waffles #themixercafe", objectPosition: "center" },
   { id: 15, image: imgTurkishSausageSand, caption: "Turkish Sausage sandwich — Sucuk, tomatoes, arugula & Swiss on multigrain 🇹🇷🥪 #sucuk #turkishsausage #themixercafe" },
 ];
 
