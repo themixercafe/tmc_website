@@ -104,7 +104,7 @@ const AvailabilityBadge = () => (
   </Popover>
 );
 
-const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean }) => {
+const MenuItem = ({ item, transparent, hideDescription, showAvailability = false }: { item: MenuItem; transparent?: boolean; hideDescription?: boolean; showAvailability?: boolean }) => {
   const image = imageMap[item.name];
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
@@ -158,7 +158,7 @@ const MenuItem = ({ item, transparent, hideDescription }: { item: MenuItem; tran
                   ★ Favorite
                 </Badge>
               )}
-              <AvailabilityBadge />
+              {showAvailability && <AvailabilityBadge />}
             </div>
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap ml-2">{item.price}</span>}
           </CardHeader>
@@ -204,7 +204,6 @@ const MenuListRow = ({ item }: { item: MenuItem }) => {
                   ★ Favorite
                 </Badge>
               )}
-              <AvailabilityBadge />
             </div>
             {SHOW_PRICES && <span className="font-bold text-secondary whitespace-nowrap">{item.price}</span>}
           </div>
@@ -265,7 +264,6 @@ export default function MenuSection() {
                   {items.map((item, idx) => (
                     <div key={idx} className="flex flex-wrap items-center justify-center gap-2">
                       <span className="text-white font-semibold text-base">{item.name}</span>
-                      <AvailabilityBadge />
                     </div>
                   ))}
                 </div>
@@ -290,7 +288,6 @@ export default function MenuSection() {
                       <img src={imageMap[item.name]} alt={item.name} className="w-full h-80 object-cover object-bottom group-hover:scale-105 transition-transform duration-300" />
                     </div>
                     <p className="text-secondary font-serif font-bold text-center text-base">{item.name}</p>
-                    <AvailabilityBadge />
                   </div>
                 ))}
               </div>
@@ -311,7 +308,6 @@ export default function MenuSection() {
             {items.map((item, idx) => (
               <div key={idx} className="flex flex-wrap justify-center items-center gap-3">
                 <span className="text-white font-semibold text-lg">{item.name}</span>
-                <AvailabilityBadge />
               </div>
             ))}
           </div>
@@ -320,7 +316,7 @@ export default function MenuSection() {
     </div>
   );
 
-  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean, centerHeaders?: boolean) => (
+  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean, centerHeaders?: boolean, showAvailability = false) => (
     <div className="space-y-10">
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
@@ -339,7 +335,7 @@ export default function MenuSection() {
           )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {items.map((item, idx) => (
-              <MenuItem key={idx} item={item} transparent={transparent} hideDescription={hideDescriptions} />
+              <MenuItem key={idx} item={item} transparent={transparent} hideDescription={hideDescriptions} showAvailability={showAvailability} />
             ))}
           </div>
         </div>
@@ -450,7 +446,7 @@ export default function MenuSection() {
             { value: "turkish", content: renderMenuWithPhotos(menuItems.turkish) },
             { value: "french", content: renderMenuWithPhotos(menuItems.french) },
             { value: "american", content: renderCategoryWithSubsections(menuItems.american, true, false, false, true) },
-            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, true) },
+            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, true, false, false, true) },
             { value: "beverages", content: renderBeveragesLayout(menuItems.beverages) },
             { value: "smoothies", content: renderSmoothiesLayout(menuItems.smoothies) },
           ].map(({ value, content }) => (
