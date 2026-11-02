@@ -58,27 +58,29 @@
     ]
   },
   "desserts": {
-    "Cake": [
+    "Cakes & Muffins": [
       { "name": "Turkish Cake", "description": "Fluffy fresh carrot cake. No milk, no oleo. Rich in walnuts.", "price": "$4.00", "popular": true },
       { "name": "Orange Cake", "description": "Fluffy cake blended with fresh orange and orange peel, raisin and walnuts.", "price": "$4.00", "popular": false },
       { "name": "Apple Cake", "description": "Fluffy cake with fresh apples with cinnamon, blended walnuts and raisin.", "price": "$4.00", "popular": false },
       { "name": "Corn Cake", "description": "Made with fresh corn, corn meal. Gluten Free.", "price": "$4.00", "popular": false, "checkAvailability": true },
-      { "name": "Corn Meal Muffins", "description": "Fluffy corn meal muffins.", "price": "$4.00", "popular": false, "checkAvailability": true }
+      { "name": "Corn Meal Muffins", "description": "Fluffy corn meal muffins.", "price": "$4.00", "popular": false, "checkAvailability": true },
+      { "name": "Blueberry Muffins", "description": "Fluffy muffins with fresh blueberries, yogurt and lemon juice.", "price": "$4.00", "popular": false },
+      { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true }
+    ],
+    "Croissants": [
+      { "name": "Plain Croissant", "description": "Buttery, flaky pastry that originated in France.", "price": "$3.25", "popular": false },
+      { "name": "Almond Croissant", "description": "Filling is rich, with creamy almond cream.", "price": "$3.25", "popular": false },
+      { "name": "Chocolate Croissant", "description": "Soft, airy, and slightly chewy, with a smooth chocolate center. Also known as pain au chocolat in French.", "price": "$3.25", "popular": false },
+      { "name": "Apple Turn Over Croissant", "description": "Flaky pastries filled with a warm, spiced apple mixture.", "price": "$3.25", "popular": false }
+    ],
+    "Savories": [
+      { "name": "Feta Spinach Croissant", "description": "Soft croissant filled with a mixture of feta cheese and spinach.", "price": "", "popular": false },
+      { "name": "Empanadas (Beef & Chicken)", "description": "Soft dough filled with juicy beef or chicken.", "price": "$5.75", "popular": false },
+      { "name": "Spinach Börek", "description": "Fresh phyllo dough filled with fresh spinach and feta cheese.", "price": "$5.75", "popular": false }
     ],
     "Cookies & Sweets": [
       { "name": "Dry Baklava", "description": "Fresh pistachios with Ghee butter.", "price": "$4.00", "popular": false },
-      { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true },
-      { "name": "Pinch Cookies", "description": "Fresh walnuts or pistachios or figs mixed with white eggs and sugar.", "price": "$1.75", "popular": false },
-      { "name": "Apple Turn Over Croissant", "description": "Flaky pastries filled with a warm, spiced apple mixture.", "price": "$3.25", "popular": false }
-    ],
-    "Croissants & Cakes": [
-      { "name": "Blueberry Muffins", "description": "Fluffy muffins with fresh blueberries, yogurt and lemon juice.", "price": "$4.00", "popular": false },
-      { "name": "Plain Croissant", "description": "Buttery, flaky pastry that originated in France.", "price": "$3.25", "popular": false },
-      { "name": "Feta Spinach Croissant", "description": "Soft croissant filled with a mixture of feta cheese and spinach.", "price": "", "popular": false },
-      { "name": "Empanadas (Beef & Chicken)", "description": "Soft dough filled with juicy beef or chicken.", "price": "$5.75", "popular": false },
-      { "name": "Spinach Börek", "description": "Fresh phyllo dough filled with fresh spinach and feta cheese.", "price": "$5.75", "popular": false },
-      { "name": "Almond Croissant", "description": "Filling is rich, with creamy almond cream.", "price": "$3.25", "popular": false },
-      { "name": "Chocolate Croissant", "description": "Soft, airy, and slightly chewy, with a smooth chocolate center. Also known as pain au chocolat in French.", "price": "$3.25", "popular": false }
+      { "name": "Pinch Cookies", "description": "Fresh walnuts or pistachios or figs mixed with white eggs and sugar.", "price": "$1.75", "popular": false }
     ]
   },
   "beverages": {

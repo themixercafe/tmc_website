@@ -316,8 +316,8 @@ export default function MenuSection() {
     </div>
   );
 
-  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean, centerHeaders?: boolean, showAvailability = false) => (
-    <div className="space-y-10">
+  const renderCategoryWithSubsections = (categoryItems: Record<string, MenuItem[]>, transparent?: boolean, hideHeaders?: boolean, hideDescriptions?: boolean, centerHeaders?: boolean, showAvailability = false, columns = false) => (
+    <div className={columns ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-start" : "space-y-10"}>
       {Object.entries(categoryItems).map(([category, items]) => (
         <div key={category}>
           {!hideHeaders && (
@@ -333,7 +333,7 @@ export default function MenuSection() {
             </div>
             )
           )}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className={columns ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 md:grid-cols-2 gap-6"}>
             {items.map((item, idx) => (
               <MenuItem key={idx} item={item} transparent={transparent} hideDescription={hideDescriptions} showAvailability={showAvailability} />
             ))}
@@ -446,7 +446,7 @@ export default function MenuSection() {
             { value: "turkish", content: renderMenuWithPhotos(menuItems.turkish) },
             { value: "french", content: renderMenuWithPhotos(menuItems.french) },
             { value: "american", content: renderCategoryWithSubsections(menuItems.american, true, false, false, true) },
-            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, true, false, false, true) },
+            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, false, false, true, true, true) },
             { value: "beverages", content: renderBeveragesLayout(menuItems.beverages) },
             { value: "smoothies", content: renderSmoothiesLayout(menuItems.smoothies) },
           ].map(({ value, content }) => (
