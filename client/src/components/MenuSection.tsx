@@ -385,6 +385,9 @@ export default function MenuSection() {
             <span className="text-white/60 text-xl md:text-2xl font-sans font-bold">A carefully curated selection of our favorite recipes passed down through generations.</span>
           </h2>
           <div className="mt-4">
+            <p className="mx-auto mb-4 max-w-2xl text-base sm:text-lg text-white leading-relaxed">
+              Our items are made fresh and are available in limited quantities. Please check availability when ordering online.
+            </p>
             <a
               href="https://www.clover.com/online-ordering/the-mixer-cafe-boynton-beach"
               target="_blank"
