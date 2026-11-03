@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-lg">
             Where Cultures Meet <br />
-            <span className="text-secondary italic">& Flavors Blend</span>
+            <span className="text-secondary italic">& Flavors Blend!!</span>
           </h1>
         </div>
       </div>
