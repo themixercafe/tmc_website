@@ -21,7 +21,6 @@
       { "name": "Ham & Cheese", "description": "Croissant, Swiss cheese, tomato and arugula.", "price": "$12.45", "popular": false },
       { "name": "Caprese", "description": "Multigrain bread, pesto, fresh mozzarella, tomatoes, arugula and balsamic glaze.", "price": "$12.95", "popular": false },
       { "name": "Turkey", "description": "Turkey breast, multigrain bread, black olives paste, pesto, mozzarella or Swiss cheese, tomato, arugula and balsamic glaze.", "price": "$14.95", "popular": true },
-      { "name": "Chicken Salad", "description": "Multigrain bread, mayo, tomatoes, arugula.", "price": "$13.90", "popular": false, "checkAvailability": true },
       { "name": "Turkish Sausage", "description": "Multigrain bread, Sucuk beef sausage, tomatoes, arugula, Swiss cheese.", "price": "$14.95", "popular": false }
     ],
     "Bagel Sandwiches": [
