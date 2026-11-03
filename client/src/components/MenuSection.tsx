@@ -403,7 +403,7 @@ export default function MenuSection() {
             Three Cultures, One Delicious Menu:
           </h2>
           <p className="mx-auto mb-4 max-w-4xl text-center text-base sm:text-lg text-white leading-relaxed">
-            <span className="block">Our items are made fresh and are available in limited quantities.</span>
+            <span className="block">Our pastries and savory items are made fresh and are available in limited quantities.</span>
             <span className="block sm:whitespace-nowrap">Please check availability when ordering online.</span>
           </p>
           <div className="text-center mb-6">
