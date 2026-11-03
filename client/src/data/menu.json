@@ -1,6 +1,6 @@
 {
   "brazilian": [
-    { "name": "Brazilian Omelette", "description": "Cheese, ham, tomato and green onions. White/Wheat/Keto bread (+$0.50). Served with jelly and butter.", "price": "$15.95", "popular": true },
+    { "name": "Brazilian Omelette", "description": "Cheese, ham, tomato and green onions.", "price": "$15.95", "popular": true },
     { "name": "Queijo Quente - Combo", "description": "Melted Cheese, French roll, corn meal cake and black cofffe.", "price": "$11.50", "popular": false },
     { "name": "Misto Quente", "description": "French Roll, melted cheese, fry ham with tomatoes.", "price": "$12.95", "popular": true },
     { "name": "Empanada", "description": "Fluffy dough with rich filling of Chicken and Beef.", "price": "$5.75", "popular": false }
