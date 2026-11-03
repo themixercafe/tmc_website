@@ -39,13 +39,7 @@
     "Waffles": [
       { "name": "Gourmet", "description": "Nutella.", "price": "$8.95", "popular": false },
       { "name": "Double", "description": "Nutella and banana.", "price": "$10.95", "popular": false },
-      { "name": "Triple", "description": "Nutella, banana and strawberry.", "price": "$10.95", "popular": true }
-    ],
-    "Pancakes": [
-      { "name": "Plain", "description": "Served as two pieces.", "price": "$5.95", "popular": false },
-      { "name": "Blueberries", "description": "Served as two pieces.", "price": "$8.95", "popular": false },
-      { "name": "Nutela", "description": "Served as two pieces.", "price": "$8.95", "popular": false },
-      { "name": "Banana & Nutela", "description": "Served as two pieces.", "price": "$9.95", "popular": true }
+      { "name": "Triple", "description": "Nutella, banana and blueberries.", "price": "$10.95", "popular": true }
     ]
   },
   "desserts": {
