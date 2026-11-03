@@ -8,6 +8,10 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
           <div className="relative order-2 lg:order-1">
+            <p className="mb-6 text-center text-xl sm:text-2xl text-white/90 leading-relaxed font-bold">
+              Experience the warmth of Brazil, the delight of Turkey, and the elegance of France.
+              {" "}A culinary journey curated by two mothers, made with love for our community.
+            </p>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-transform duration-500">
               <img
                 src={aboutImage}
