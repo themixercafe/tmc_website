@@ -406,6 +406,9 @@ export default function MenuSection() {
           <h2 className="text-center text-4xl md:text-5xl font-serif font-bold text-white mb-6">
             Explore Our Menu
           </h2>
+          <div className="text-center mb-6">
+            <AvailabilityBadge />
+          </div>
           <div className="mb-10 flex items-center justify-center gap-2">
             {/* Left arrow */}
             <button
