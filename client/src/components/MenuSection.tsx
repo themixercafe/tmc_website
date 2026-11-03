@@ -400,7 +400,7 @@ export default function MenuSection() {
           value={activeTab}
         >
           <h2 className="text-center text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-            Explore Our Menu
+            Three Cultures, One Delicious Menu:
           </h2>
           <p className="mx-auto mb-4 max-w-4xl text-center text-base sm:text-lg text-white leading-relaxed">
             <span className="block">Our items are made fresh and are available in limited quantities.</span>
