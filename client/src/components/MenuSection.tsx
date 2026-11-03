@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import OrderOnlineDialog from "./OrderOnlineDialog";
 
 // Toggle to show/hide prices across the entire menu
 const SHOW_PRICES = false;
@@ -384,14 +385,14 @@ export default function MenuSection() {
               <span className="block">Our items are made fresh and are available in limited quantities.</span>
               <span className="block sm:whitespace-nowrap">Please check availability when ordering online.</span>
             </p>
-            <a
-              href="https://www.clover.com/online-ordering/the-mixer-cafe-boynton-beach"
-              target="_blank"
-              rel="noopener noreferrer"
+            <OrderOnlineDialog>
+            <button
+              type="button"
               className="inline-flex items-center gap-2 bg-secondary text-black font-bold px-8 py-3 rounded-full text-lg hover:bg-secondary/80 transition-colors shadow-lg"
             >
               🛒 Order Online
-            </a>
+            </button>
+            </OrderOnlineDialog>
           </div>
         </div>
 
