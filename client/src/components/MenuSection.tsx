@@ -376,10 +376,9 @@ export default function MenuSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <span className="text-secondary font-bold tracking-widest uppercase text-2xl mb-2 block">Our Kitchen</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-            "Explore Our Menu"<br />
-            <span className="text-white/60 text-xl md:text-2xl font-sans font-bold">A carefully curated selection of our favorite recipes passed down through generations.</span>
-          </h2>
+          <p className="text-white/60 text-xl md:text-2xl font-sans font-bold mb-4">
+            A carefully curated selection of our favorite recipes passed down through generations.
+          </p>
           <div className="mt-4">
             <p className="mx-auto mb-4 max-w-4xl text-base sm:text-lg text-white leading-relaxed">
               <span className="block">Our items are made fresh and are available in limited quantities.</span>
@@ -403,6 +402,9 @@ export default function MenuSection() {
           onValueChange={handleTabChange}
           value={activeTab}
         >
+          <h2 className="text-center text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            Explore Our Menu
+          </h2>
           <div className="mb-10 flex items-center justify-center gap-2">
             {/* Left arrow */}
             <button
