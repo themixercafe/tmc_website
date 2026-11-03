@@ -2,8 +2,6 @@
   "brazilian": [
     { "name": "Queijo Quente - Combo", "description": "Melted Cheese, French roll, corn meal cake and black cofffe.", "price": "$11.50", "popular": false },
     { "name": "Misto Quente", "description": "French Roll, melted cheese, fry ham with tomatoes.", "price": "$12.95", "popular": true },
-    { "name": "Coxinha", "description": "Coxina is a brazilian snack of paulista origian witch consists of chopped or shredded chicken meat, covered in dough, cream cheese molded into a shape resembling a teardrop, battered and fried.", "price": "$4.15", "popular": true, "checkAvailability": true },
-    { "name": "Pão de Queijo", "description": "Pão de queijo is a small, baked Brazilian cheese bread with a chewy, elastic interior and a slightly crisp exterior, made primarily from tapioca (cassava) flour and cheese.", "price": "$1.55", "popular": true },
     { "name": "Empanada", "description": "Fluffy dough with rich filling of Chicken and Beef.", "price": "$5.75", "popular": false }
   ],
   "turkish": [
@@ -73,6 +71,8 @@
       { "name": "Apple Turn Over Croissant", "description": "Flaky pastries filled with a warm, spiced apple mixture.", "price": "$3.25", "popular": false }
     ],
     "Savories": [
+      { "name": "Pão de Queijo", "description": "Pão de queijo is a small, baked Brazilian cheese bread with a chewy, elastic interior and a slightly crisp exterior, made primarily from tapioca (cassava) flour and cheese.", "price": "$1.55", "popular": true },
+      { "name": "Coxinha", "description": "Coxina is a brazilian snack of paulista origian witch consists of chopped or shredded chicken meat, covered in dough, cream cheese molded into a shape resembling a teardrop, battered and fried.", "price": "$4.15", "popular": true, "checkAvailability": true },
       { "name": "Feta Spinach Croissant", "description": "Soft croissant filled with a mixture of feta cheese and spinach.", "price": "", "popular": false },
       { "name": "Empanadas (Beef & Chicken)", "description": "Soft dough filled with juicy beef or chicken.", "price": "$5.75", "popular": false },
       { "name": "Spinach Börek", "description": "Fresh phyllo dough filled with fresh spinach and feta cheese.", "price": "$5.75", "popular": false }
