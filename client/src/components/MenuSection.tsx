@@ -14,7 +14,6 @@ import queijoQuenteImage from "@assets/queijo_quente_clean.jpg";
 import mistoQuenteImage from "@assets/misto_quente_clean.jpg";
 import paodeQueijoImage from "@assets/craveiro6-bread-4968502_1920_1786541762162.jpg";
 import empanadaImage from "@assets/IMG-20260520-WA0007_1786542338164.jpg";
-import espirraImage from "@assets/pexels-andre-tomaz-101600289-15899519_1786543240514.jpg";
 import menemenImage from "@assets/menemen_clean.jpg";
 import baconEggCheeseImage from "@assets/Bacon,_Egg_&_Cheese_1786545320586.jpg";
 import turkishTeaImage from "@assets/Turkish_Tea_1786545372363.jpg";
@@ -69,7 +68,6 @@ const imageMap: Record<string, string> = {
   // "Misto Quente": mistoQuenteImage,
   // "Pão de Queijo": paodeQueijoImage,
   // "Empanada": empanadaImage,
-  // "Espirra": espirraImage,
   // "Menemen": menemenImage,
   // "Bacon, Egg & Cheese": baconEggCheeseImage,
   // "Turkish Tea": turkishTeaImage,
