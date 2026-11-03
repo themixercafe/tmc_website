@@ -425,7 +425,7 @@ export default function MenuSection() {
                   { value: "turkish", label: "Turkish" },
                   { value: "french", label: "French" },
                   { value: "american", label: "Cafe Classics" },
-                  { value: "desserts", label: "Pastries" },
+                  { value: "desserts", label: "Pastries & Savories" },
                   { value: "beverages", label: "Beverages" },
                   { value: "smoothies", label: "Smoothies" },
                 ].map(({ value, label }) => (
