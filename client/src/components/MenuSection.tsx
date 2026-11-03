@@ -450,7 +450,7 @@ export default function MenuSection() {
             { value: "turkish", content: renderMenuWithPhotos(menuItems.turkish) },
             { value: "french", content: renderMenuWithPhotos(menuItems.french) },
             { value: "american", content: renderCategoryWithSubsections(menuItems.american, true, false, false, true) },
-            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, false, false, true, true, true) },
+            { value: "desserts", content: renderCategoryWithSubsections(menuItems.desserts, true, false, false, true, false, true) },
             { value: "beverages", content: renderBeveragesLayout(menuItems.beverages) },
             { value: "smoothies", content: renderSmoothiesLayout(menuItems.smoothies) },
           ].map(({ value, content }) => (
