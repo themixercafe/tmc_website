@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
+      <div className="relative -translate-y-12 md:-translate-y-20 z-10 container mx-auto px-4 text-center text-white max-w-4xl">
         <div className="animate-in slide-in-from-bottom-10 fade-in duration-1000">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-lg">
             Where Cultures Meet <br />
