@@ -381,10 +381,6 @@ export default function MenuSection() {
             A carefully curated selection of our favorite recipes passed down through generations.
           </p>
           <div className="mt-4">
-            <p className="mx-auto mb-4 max-w-4xl text-base sm:text-lg text-white leading-relaxed">
-              <span className="block">Our items are made fresh and are available in limited quantities.</span>
-              <span className="block sm:whitespace-nowrap">Please check availability when ordering online.</span>
-            </p>
             <OrderOnlineDialog>
             <button
               type="button"
@@ -406,6 +402,10 @@ export default function MenuSection() {
           <h2 className="text-center text-4xl md:text-5xl font-serif font-bold text-white mb-6">
             Explore Our Menu
           </h2>
+          <p className="mx-auto mb-4 max-w-4xl text-center text-base sm:text-lg text-white leading-relaxed">
+            <span className="block">Our items are made fresh and are available in limited quantities.</span>
+            <span className="block sm:whitespace-nowrap">Please check availability when ordering online.</span>
+          </p>
           <div className="text-center mb-6">
             <AvailabilityBadge />
           </div>
