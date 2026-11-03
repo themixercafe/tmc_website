@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import heroImage from "@assets/IMG_8811_1786632258425.jpg";
 
 export default function Hero() {
@@ -30,10 +29,6 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block text-white/70">
-        <ArrowRight className="rotate-90 w-6 h-6" />
-      </div>
     </section>
   );
 }
