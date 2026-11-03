@@ -432,7 +432,7 @@ export default function MenuSection() {
                   <TabsTrigger
                     key={value}
                     value={value}
-                    className="rounded-full px-3 py-2 text-base text-secondary data-[state=active]:bg-black/40 data-[state=active]:text-secondary data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap overflow-visible"
+                    className="rounded-full px-3 py-2 text-base text-white data-[state=active]:bg-black/40 data-[state=active]:text-white data-[state=active]:font-bold data-[state=active]:shadow-lg transition-all !bg-transparent !shadow-none whitespace-nowrap overflow-visible"
                   >
                     {label}
                   </TabsTrigger>
