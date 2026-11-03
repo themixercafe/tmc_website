@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@assets/IMG_8811_1786632258425.jpg";
-import OrderOnlineDialog from "./OrderOnlineDialog";
 
 export default function Hero() {
   return (
@@ -29,23 +27,6 @@ export default function Hero() {
             Experience the warmth of Brazil, the delight of Turkey, and the elegance of France. 
             A culinary journey curated by two mothers, made with love for our community.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
-            <OrderOnlineDialog>
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-8 h-12 rounded-full text-lg shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transition-all transform hover:-translate-y-1"
-              >
-                Order Online
-              </Button>
-            </OrderOnlineDialog>
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-8 h-12 rounded-full text-lg shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transition-all transform hover:-translate-y-1"
-              onClick={() => document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              View Menu
-            </Button>
-          </div>
         </div>
       </div>
       
