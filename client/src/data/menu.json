@@ -8,8 +8,7 @@
     { "name": "Sucuk Yumurta", "description": "Turkish sausage, two eggs and multigrain.", "price": "$15.90", "popular": true },
     { "name": "Turkish Bagel", "description": "Swiss cheese, tomatoes and simit bagel.", "price": "$8.50", "popular": false },
     { "name": "Menemen", "description": "Turkish-style scrambled eggs cooked with tomatoes, peppers, Turkish spices.", "price": "$14.95", "popular": true },
-    { "name": "Cilbir", "description": "Two poached eggs, garlic yogurt with butter spices sauce and multigrain bread.", "price": "$12.90", "popular": true },
-    { "name": "Spinach Feta Börek", "description": "Savory pastry with spinach and feta cheese.", "price": "$5.75", "popular": true, "checkAvailability": true }
+    { "name": "Cilbir", "description": "Two poached eggs, garlic yogurt with butter spices sauce and multigrain bread.", "price": "$12.90", "popular": true }
   ],
   "french": [
     { "name": "Bacon, Egg & Cheese", "description": "Croissant, bacon, egg and cheese.", "price": "$12.95", "popular": true },
