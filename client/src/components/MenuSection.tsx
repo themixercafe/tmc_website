@@ -33,6 +33,7 @@ import smoothieBerry from "@assets/mixed-berry-smoothie-2-min_1787066623486.jpg"
 import smoothieMango from "@assets/Mango-Pineapple-Smoothie-3_1787066623486.webp";
 import smoothieSunrise from "@assets/strawberry-mango-smoothie-1_1787074399873.jpg";
 import smoothieStrawberry from "@assets/smoothie_strawberry_white.jpg";
+import acaiImage from "@assets/acai_new)_1793895296530.png";
 import cappuccinoImage from "@assets/Cappuccino_with_latte_art_and_sugar(1)_1786888289473.png";
 import matchaImage from "@assets/Iced_matcha_latte_and_accessories(1)_1786888381418.png";
 import turkishTeaDrinkImage from "@assets/turkish_tea_4_1786888400190.webp";
@@ -264,7 +265,14 @@ export default function MenuSection() {
                     <div key={idx} className="flex flex-wrap items-center justify-center gap-2">
                       <span className="text-white font-semibold text-base">{item.name}</span>
                       {category === "Açaí" && (
-                        <p className="w-full text-white text-center">{item.description}</p>
+                        <div className="w-full flex flex-col items-center gap-4">
+                          <img
+                            src={acaiImage}
+                            alt="Açaí bowl topped with fruit, granola and coconut"
+                            className="w-full max-w-sm aspect-square object-cover rounded-2xl"
+                          />
+                          <p className="max-w-xl text-white text-center">{item.description}</p>
+                        </div>
                       )}
                     </div>
                   ))}
