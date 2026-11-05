@@ -273,7 +273,13 @@ export default function MenuSection() {
                             alt="Açaí bowl topped with fruit, granola and coconut"
                             className="w-[calc(25%_-_0.75rem)] h-auto aspect-square object-contain object-center rounded-2xl"
                           />
-                          <p className="max-w-xl text-white text-center">{item.description}</p>
+                          <p className="max-w-xl text-white text-center">
+                            {item.description.split(/(?<=\.)\s+/).map((sentence, index) => (
+                              <span key={index} className={index > 0 ? "block sm:whitespace-nowrap" : "block"}>
+                                {sentence}
+                              </span>
+                            ))}
+                          </p>
                         </div>
                       )}
                     </div>
