@@ -107,14 +107,14 @@
       { "name": "Berry Blast", "description": "Strawberry, blueberry, banana, blackberry. Regular milk or yogurt.", "price": "$7.99", "popular": true },
       { "name": "Strawberry Banana", "description": "Strawberry and banana. Regular milk or yogurt.", "price": "$7.99", "popular": false, "nameColor": "#FFB6C1" }
     ],
-    "Açaí": [
-      { "name": "Açaí", "description": "Açaí bowl topped with fresh fruit, granola and coconut. Fruit selections may vary depending on the season.", "price": "", "popular": false }
-    ],
     "Smoothie Add-ons": [
       { "name": "Vegan Milk", "description": "Almond or Oat", "price": "$1.00", "popular": false },
       { "name": "Protein", "description": "", "price": "$1.50", "popular": false },
       { "name": "Collagen", "description": "", "price": "$2.00", "popular": false },
       { "name": "Honey", "description": "", "price": "$0.50", "popular": false }
+    ],
+    "Açaí": [
+      { "name": "Açaí", "description": "Açaí bowl topped with fresh fruit, granola and coconut. Fruit selections may vary depending on the season.", "price": "", "popular": false }
     ]
   }
 }
