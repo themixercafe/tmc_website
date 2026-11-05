@@ -22,11 +22,9 @@ import imgCafeInterior from "@assets/IMG_8811_1786632085546.jpg";
 import imgTurkishTea from "@assets/Turkish_Tea_1786708566301.jpg";
 import imgTurkishTray from "@assets/Turkish_single_tray_clean.jpg";
 import imgWafflesNew from "@assets/banana_waffles_1793631513937.png";
-import imgAcai from "@assets/acai_new)_1793895296530.png";
 import imgTurkishSausageSand from "@assets/Turkish_sausage_sand._1786717907268.png";
 
 const instagramPosts = [
-  { id: 16, image: imgAcai, caption: "Açaí bowl #acai #themixercafe", objectPosition: "center" },
   { id: 1, image: imgBaklava, caption: "Fresh pistachio baklava — a Turkish sweet treat! 🇹🇷 #baklava #turkishdessert #themixercafe" },
   { id: 2, image: imgMenemen, caption: "Turkish scrambled eggs done right 🍳🇹🇷 #menemen #turkishbreakfast #themixercafe", objectPosition: "top" },
   { id: 4, image: imgBenedict, caption: "Dear Benedict — poached eggs, Hollandaise & Canadian bacon on a croissant 🥚🥐 #brunch #themixercafe" },
