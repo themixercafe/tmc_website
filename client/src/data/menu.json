@@ -49,7 +49,7 @@
       { "name": "Corn Cake", "description": "Made with fresh corn, corn meal. Gluten Free.", "price": "$4.00", "popular": false, "checkAvailability": true },
       { "name": "Corn Meal Muffins", "description": "Fluffy corn meal muffins.", "price": "$4.00", "popular": false, "checkAvailability": true },
       { "name": "Blueberry Muffins", "description": "Fluffy muffins with fresh blueberries, yogurt and lemon juice.", "price": "$4.00", "popular": false },
-      { "name": "Brownie Mascarpone Cake", "description": "Rich chocolate mixed with mascarpone. Served hot with whipped cream.", "price": "$4.00", "popular": true }
+      { "name": "Brownie Mascarpone Cake", "description": "Triple chocolate. Served hot with whipped cream.", "price": "$4.00", "popular": true }
     ],
     "Croissants": [
       { "name": "Plain Croissant", "description": "Buttery, flaky pastry that originated in France.", "price": "$3.25", "popular": false },
