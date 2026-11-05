@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import aboutImage from "@assets/owners_background_cleaned_final.jpg";
+import aboutImage from "@assets/file_000000001df8820eb467f1ef507eb7eb_1793800471792.png";
 
 export default function AboutSection() {
   return (
