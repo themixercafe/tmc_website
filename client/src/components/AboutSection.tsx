@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import aboutImage from "@assets/owners_ayse_hair_tidied.png";
+import aboutImage from "@assets/owners_ayse_hair_both_sides.png";
 
 export default function AboutSection() {
   return (
