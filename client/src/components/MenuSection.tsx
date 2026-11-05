@@ -263,6 +263,9 @@ export default function MenuSection() {
                   {items.map((item, idx) => (
                     <div key={idx} className="flex flex-wrap items-center justify-center gap-2">
                       <span className="text-white font-semibold text-base">{item.name}</span>
+                      {category === "Açaí" && (
+                        <p className="w-full text-white text-center">{item.description}</p>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -425,7 +428,7 @@ export default function MenuSection() {
                   { value: "american", label: "Cafe Classics" },
                   { value: "desserts", label: "Pastries & Savories" },
                   { value: "beverages", label: "Beverages" },
-                  { value: "smoothies", label: "Smoothies" },
+                  { value: "smoothies", label: "Smoothies and Acai" },
                 ].map(({ value, label }) => (
                   <TabsTrigger
                     key={value}
