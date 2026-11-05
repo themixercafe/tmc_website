@@ -1,0 +1,1 @@
+- [Photo retouching](photo-retouching.md) — verify AI output framing; preserve original people when cleaning photo backgrounds.
