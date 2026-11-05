@@ -64,7 +64,7 @@
       { "name": "Spinach Börek", "description": "Fresh phyllo dough filled with fresh spinach and feta cheese.", "price": "$5.75", "popular": false }
     ],
     "Cookies & Sweets": [
-      { "name": "Brownie Cake", "description": "Triple chocolate. Served hot with whipped cream.", "price": "$4.00", "popular": true },
+      { "name": "Brownie", "description": "Triple chocolate. Served hot with whipped cream.", "price": "$4.00", "popular": true },
       { "name": "Dry Baklava", "description": "Fresh pistachios with Ghee butter.", "price": "$4.00", "popular": false },
       { "name": "Pinch Cookies", "description": "Walnuts, pistachios, or a fig and walnut mix.", "price": "$1.75", "popular": false }
     ]
