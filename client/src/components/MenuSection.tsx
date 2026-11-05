@@ -262,14 +262,14 @@ export default function MenuSection() {
                 <div className="w-16 h-px bg-secondary/50 mx-auto mb-4" />
                 <div className="flex flex-col items-center gap-2">
                   {items.map((item, idx) => (
-                    <div key={idx} className="flex flex-wrap items-center justify-center gap-2">
+                    <div key={idx} className="w-full flex flex-wrap items-center justify-center gap-2">
                       <span className="text-white font-semibold text-base">{item.name}</span>
                       {category === "Açaí" && (
                         <div className="w-full flex flex-col items-center gap-4">
                           <img
                             src={acaiImage}
                             alt="Açaí bowl topped with fruit, granola and coconut"
-                            className="w-full max-w-xs aspect-square object-cover rounded-2xl"
+                            className="w-[calc(25%_-_0.75rem)] h-80 object-cover object-bottom rounded-2xl"
                           />
                           <p className="max-w-xl text-white text-center">{item.description}</p>
                         </div>
