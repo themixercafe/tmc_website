@@ -66,7 +66,7 @@
     ],
     "Cookies & Sweets": [
       { "name": "Dry Baklava", "description": "Fresh pistachios with Ghee butter.", "price": "$4.00", "popular": false },
-      { "name": "Pinch Cookies", "description": "Fresh walnuts or pistachios or figs mixed with white eggs and sugar.", "price": "$1.75", "popular": false }
+      { "name": "Pinch Cookies", "description": "Walnuts, pistachios, or a fig and walnut mix.", "price": "$1.75", "popular": false }
     ]
   },
   "beverages": {
