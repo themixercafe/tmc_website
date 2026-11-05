@@ -48,8 +48,7 @@
       { "name": "Apple Cake", "description": "Fluffy cake with fresh apples with cinnamon, blended walnuts and raisin.", "price": "$4.00", "popular": false },
       { "name": "Corn Cake", "description": "Made with fresh corn, corn meal. Gluten Free.", "price": "$4.00", "popular": false, "checkAvailability": true },
       { "name": "Corn Meal Muffins", "description": "Fluffy corn meal muffins.", "price": "$4.00", "popular": false, "checkAvailability": true },
-      { "name": "Blueberry Muffins", "description": "Fluffy muffins with fresh blueberries, yogurt and lemon juice.", "price": "$4.00", "popular": false },
-      { "name": "Brownie Cake", "description": "Triple chocolate. Served hot with whipped cream.", "price": "$4.00", "popular": true }
+      { "name": "Blueberry Muffins", "description": "Fluffy muffins with fresh blueberries, yogurt and lemon juice.", "price": "$4.00", "popular": false }
     ],
     "Croissants": [
       { "name": "Plain Croissant", "description": "Buttery, flaky pastry that originated in France.", "price": "$3.25", "popular": false },
@@ -65,6 +64,7 @@
       { "name": "Spinach Börek", "description": "Fresh phyllo dough filled with fresh spinach and feta cheese.", "price": "$5.75", "popular": false }
     ],
     "Cookies & Sweets": [
+      { "name": "Brownie Cake", "description": "Triple chocolate. Served hot with whipped cream.", "price": "$4.00", "popular": true },
       { "name": "Dry Baklava", "description": "Fresh pistachios with Ghee butter.", "price": "$4.00", "popular": false },
       { "name": "Pinch Cookies", "description": "Walnuts, pistachios, or a fig and walnut mix.", "price": "$1.75", "popular": false }
     ]
