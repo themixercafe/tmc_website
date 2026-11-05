@@ -28,9 +28,9 @@
       { "name": "Smoked Salmon*", "description": "Cream cheese, tomato, onion and capers. Plain, Everything or Sesame.", "price": "$12.95", "popular": true }
     ],
     "Omelettes": [
-      { "name": "Cheese", "description": "", "price": "", "popular": false },
-      { "name": "Mushroom & Cheese", "description": "", "price": "", "popular": false },
-      { "name": "Bacon & Cheese", "description": "", "price": "", "popular": false },
+      { "name": "Cheese", "description": "Mozzarella cheese.", "price": "", "popular": false },
+      { "name": "Mushroom & Cheese", "description": "Mushrooms and cheese.", "price": "", "popular": false },
+      { "name": "Bacon & Cheese", "description": "Bacon and cheese.", "price": "", "popular": false },
       { "name": "Brazilian", "description": "Cheese, ham, tomato and green onions.", "price": "", "popular": true },
       { "name": "Florentine", "description": "Cheese, spinach, mushrooms and tomatoes.", "price": "", "popular": false },
       { "name": "Sucuk Omelette", "description": "Turkish beef sausage and cheese.", "price": "", "popular": false }
