@@ -269,7 +269,7 @@ export default function MenuSection() {
                           <img
                             src={acaiImage}
                             alt="Açaí bowl topped with fruit, granola and coconut"
-                            className="w-full max-w-sm aspect-square object-cover rounded-2xl"
+                            className="w-full max-w-xs aspect-square object-cover rounded-2xl"
                           />
                           <p className="max-w-xl text-white text-center">{item.description}</p>
                         </div>
