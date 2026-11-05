@@ -23,9 +23,9 @@
       { "name": "Turkish Sausage", "description": "Multigrain bread, Sucuk beef sausage, tomatoes, arugula, Swiss cheese.", "price": "$14.95", "popular": false }
     ],
     "Bagel Sandwiches": [
-      { "name": "Cream Cheese", "description": "Plain, Everything or Sesame.", "price": "$4.95", "popular": false },
-      { "name": "Bacon Egg & Cheese", "description": "Plain, Everything or Sesame.", "price": "$11.95", "popular": false },
-      { "name": "Smoked Salmon*", "description": "Cream cheese, tomato, onion and capers. Plain, Everything or Sesame.", "price": "$12.95", "popular": true }
+      { "name": "Cream Cheese", "description": "Plain or Everything.", "price": "$4.95", "popular": false },
+      { "name": "Bacon Egg & Cheese", "description": "Plain or Everything.", "price": "$11.95", "popular": false },
+      { "name": "Smoked Salmon*", "description": "Cream cheese, tomato, onion and capers. Plain or Everything.", "price": "$12.95", "popular": true }
     ],
     "Omelettes": [
       { "name": "Cheese", "description": "Mozzarella cheese.", "price": "", "popular": false },
