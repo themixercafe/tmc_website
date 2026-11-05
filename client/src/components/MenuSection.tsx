@@ -28,7 +28,7 @@ import americanBg from "@assets/cafe_left_noflower.jpg";
 import classicsBg from "@assets/classics_collage.jpg";
 import teapotBg from "@assets/teapot_full.png";
 import beveragesBg from "@assets/beverages_collage.jpg";
-import smoothiesBg from "@assets/smoothies_bg.jpg";
+import smoothiesBg from "@assets/generated_images/foggy_fruit_background.jpg";
 import smoothieBerry from "@assets/mixed-berry-smoothie-2-min_1787066623486.jpg";
 import smoothieMango from "@assets/Mango-Pineapple-Smoothie-3_1787066623486.webp";
 import smoothieSunrise from "@assets/strawberry-mango-smoothie-1_1787074399873.jpg";
@@ -362,7 +362,7 @@ export default function MenuSection() {
     american:  { image: classicsBg, position: "center" },
     desserts:  { image: teapotBg, position: "center", filter: "brightness(1.3) saturate(1.1)", opacity: 0.35 },
     beverages: { image: beveragesBg, position: "center" },
-    smoothies: { image: smoothiesBg, position: "center", filter: "brightness(0.85) saturate(1.1)" },
+    smoothies: { image: smoothiesBg, position: "center", filter: "blur(4px) brightness(0.85) saturate(0.9)" },
   };
   const currentBg = tabBgMap[activeTab] ?? tabBgMap.french;
 
