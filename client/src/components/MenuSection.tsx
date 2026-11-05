@@ -263,7 +263,9 @@ export default function MenuSection() {
                 <div className="flex flex-col items-center gap-2">
                   {items.map((item, idx) => (
                     <div key={idx} className="w-full flex flex-wrap items-center justify-center gap-2">
-                      <span className="text-white font-semibold text-base">{item.name}</span>
+                      {category !== "Açaí" && (
+                        <span className="text-white font-semibold text-base">{item.name}</span>
+                      )}
                       {category === "Açaí" && (
                         <div className="w-full flex flex-col items-center gap-4">
                           <img
