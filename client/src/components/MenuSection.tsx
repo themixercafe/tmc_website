@@ -356,6 +356,11 @@ export default function MenuSection() {
               <MenuItem key={idx} item={item} transparent={transparent} hideDescription={hideDescriptions} showAvailability={showAvailability} />
             ))}
           </div>
+          {category === "Cakes & Muffins" && (
+            <p className="mt-4 text-center text-white/90 italic">
+              For whole cakes, please call the café.
+            </p>
+          )}
         </div>
       ))}
     </div>
