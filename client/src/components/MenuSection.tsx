@@ -357,7 +357,7 @@ export default function MenuSection() {
             ))}
           </div>
           {category === "Cakes & Muffins" && (
-            <p className="mt-4 text-center text-white/90 italic">
+            <p className="mt-4 text-center text-red-400 font-bold italic">
               For whole cakes, please call the café.
             </p>
           )}
