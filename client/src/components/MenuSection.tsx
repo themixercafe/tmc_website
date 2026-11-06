@@ -357,8 +357,8 @@ export default function MenuSection() {
             ))}
           </div>
           {category === "Cakes & Muffins" && (
-            <p className="mt-4 text-center text-red-400 font-bold italic">
-              For whole cakes, please call the café at{" "}
+            <p className="mt-4 text-center text-sm text-red-400 font-bold italic whitespace-nowrap">
+              Whole cakes: Please call{" "}
               <a href="tel:5615365386" className="underline underline-offset-2">
                 (561) 536-5386
               </a>
